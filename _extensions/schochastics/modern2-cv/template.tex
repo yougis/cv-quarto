@@ -466,8 +466,8 @@ $endif$
 
 
 % LEBENSLAUF HIERE
-\AtBeginShipoutFirst{\Header{CV}\Footer{1}}
-\AtBeginShipout{\AtBeginShipoutAddToBox{\Header{CV}\Footer{2}}}
+\AtBeginShipoutFirst{\Header{$author$}\Footer{1}}
+\AtBeginShipout{\AtBeginShipoutAddToBox{\Header{$author$}\Footer{2}}}
 
 \newpage
 
@@ -484,7 +484,6 @@ $endif$
         \includegraphics[width=\linewidth]{$sidebar.image$}
         $endif$
 		\fcolorbox{white}{white}{\begin{minipage}[c][1.5cm][c]{1\mpwidth}
-				\LARGE{\textbf{\textcolor{maincol}{$author$}}} \\[2pt]
 				\normalsize{ \textcolor{maincol} {$jobtitle$} }
 			\end{minipage}}
 

@@ -1,0 +1,137 @@
+---
+title: Hugo ROUSSAFFA
+format:
+  modern2-cv-pdf: default
+author: Hugo Roussaffa
+cvfont: raleway
+cvcolor:
+  main: "B83B5E"
+  accent: "6A2C70"
+jobtitle: Data Engineer spécialisé en données spatiales
+sidebar:
+  image: portrait.jpg
+  bullets:
+    - Itinérant, Monde
+    - Français
+    - Marié, 2 enfants
+  sections:
+    - name: Compétences clés
+      items:
+        - text: Traitement & automatisation de données
+          exp:
+            text: "+10 ans"
+            num: 1
+        - text: Bases de données spatiales
+          exp:
+            text: "10 ans"
+            num: 1
+        - text: ETL, ELT, pipeline de données
+          exp:
+            text: "6 ans"
+            num: 0.6
+        - text: Analyse spatiale et statistiques
+          exp:
+            text: "10 ans"
+            num: 1
+        - text: DevOps & Infrastructure Cloud
+          exp:
+            text: "4 ans"
+            num: 0.4
+        - text: Programmation Python
+          exp:
+            text: "8 ans"
+            num: 0.8
+        - text: Docker, Dask, Conda
+          exp:
+            text: "4 ans"
+            num: 0.4
+    - name: Technologies
+      items:
+        - Python
+        - PostgreSQL/PostGIS
+        - Docker
+        - DBT
+        - Conda, Dask
+        - Git
+        - Quarto
+        - Elastic Stack
+        - Angular
+        - QGIS
+    - name: Diplômes
+      items:
+        - text: "Master 2 CARTHAGEO"
+          inst: "Université Paris 7, Paris 1 Sorbonne & ENSG"
+          time: "2009 - 2011"
+          details: "Mention Bien"
+        - text: "Licence Géographie"
+          inst: "Université de Poitiers & Paris 7 Diderot"
+          time: "2005 - 2008"
+          details: "Mention Assez Bien"
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Itinérant, Monde
+        - icon: phone
+          text: "+33 659865534"
+        - icon: envelope
+          text: "hugoroussaffa@gmail.com"
+        - icon: github
+          text: "yougis"
+          href: "https://github.com/yougis"
+        - icon: linkedin
+          text: "hugo-roussaffa"
+          href: "https://linkedin.com/in/hugo-roussaffa"
+execute:
+  echo: false
+---
+
+# Résumé
+
+Data Engineer spécialisé dans les données spatiales, expert dans la création et l'automatisation de pipelines de données robustes et performants. Expérimenté en bases de données géospatiales, en développement de workflows ETL/ELT et en intégration de solutions cloud. Passionné par l'optimisation de processus et l'exploitation avancée des données géospatiales à grande échelle.
+
+# Expérience
+
+```{r}
+#| label: experience
+#| output: asis
+
+library(tibble)
+
+tibble::tribble(
+  ~role, ~institution, ~dates, ~details,
+  "Responsable Data & SI Géospatiaux", "Observatoire de l'environnement (OEIL), Nouméa", "06/2021 - 08/2024",
+  "Gestion de pipelines de données spatiales automatisés, intégration continue, ETL/ELT, modélisation PostgreSQL/PostGIS, déploiements Docker, Conda et Dask.",
+
+  "Géomaticien - Data Engineer", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
+  "Création et automatisation de traitements spatiaux, gestion avancée de bases de données spatiales et développement d'applications web basées sur des pipelines de données robustes.",
+
+  "Développeur Data Géospatiales", "Geo-datup, Toulouse (FR)", "04/2016 - 05/2018",
+  "Développement Python/QGIS, création de workflows automatisés de traitement et analyse de données photogrammétriques.",
+
+  "Consultant Data Management", "ONG Fauna Flora International (Myanmar)", "05/2015 - 07/2015",
+  "Mise en place d'une plateforme de partage et automatisation du traitement des données spatiales entre ONG environnementales.",
+
+  "Analyste de données", "CEDET Université Paris 7 Diderot", "2009 - 2010",
+  "Traitement statistique et analyse de données multivariées."
+) |> cvevents("dates", "role", "institution", "details")
+```
+
+# Projets pertinents
+
+```{r}
+#| label: projects
+#| output: asis
+
+tibble::tribble(
+  ~what, ~role, ~items,
+  "SI Décisionnel Environnemental", "Architecte & Développeur Data", c("Développement pipelines géospatiaux (Python/Dask/Conda)", "Mise en place ELT avec DBT", "Intégration des données spatiales avec H3"),
+
+  "Détection et suivi incendies", "Développeur & Data Engineer", c("Traitement automatisé flux FIRMS, classification Sentinel-2", "Pipelines sur STAC/GEE", "Rapports automatisés avec Quarto"),
+
+  "Suivi sécheresse", "Développeur Data Pipeline", c("Extraction d'indicateurs satellites via GEE", "Déploiement automatisé via CI/CD"),
+
+  "Pollution lumineuse", "Data Engineer", c("Pipeline automatisé analyse spatiale images VIIRS", "Création tableaux de bord interactifs"),
+
+  "Modélisation et administration BDD spatiale", "Administrateur & Data Engineer", c("Modélisation PostgreSQL/PostGIS", "Sauvegarde Barman cloud", "Gestion droits utilisateurs")
+) |> cvproj("what", "role", "items")
+```
