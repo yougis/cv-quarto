@@ -21,4 +21,4 @@ installer les packages R suivants
 Installer le package laTex (fedora)
 
 
-`sudo dnf install texlive-scheme-medium texlive-collection-latexextra texlive-collection-fontsrecommended`
+`sudo dnf install texlive-scheme-full texlive-collection-latexextra texlive-collection-fontsrecommended  texlive-xetex`

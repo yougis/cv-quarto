@@ -4,6 +4,22 @@ format:
   modern2-cv-pdf: default
   pdf:
     colorlinks: true
+
+    pdf-engine: xelatex
+    mainfont: "Noto Sans"
+    fontsize: 11pt
+    include-in-header:
+      text: |
+        \usepackage{fontspec}
+        \setmainfont{Noto Sans}
+        \newfontfamily\EmojiFont{Noto Color Emoji}[Renderer=Harfbuzz]
+        \usepackage{newunicodechar}
+        \newunicodechar{🗺️}{{\EmojiFont 🗺️}}
+        \newunicodechar{🐍}{{\EmojiFont 🐍}}
+        \newunicodechar{🗄️}{{\EmojiFont 🗄️}}
+        \newunicodechar{🌐}{{\EmojiFont 🌐}}
+        \newunicodechar{📥}{{\EmojiFont 📥}}
+
 author: Hugo Roussaffa
 cvfont: raleway
 cvcolor:
@@ -42,7 +58,7 @@ sidebar:
           exp:
             text: "+14 ans"
             num: 1
-        - text: Infrastructure de données spatiales
+        - text: Infrastructure de données spatiales 
           exp:
             text: "10 ans"
             num: 1
@@ -50,51 +66,58 @@ sidebar:
           exp:
             text: "10 ans"
             num: 1
-        - text: Cataloguage des données
+        - text: Gestion de bases de données spatiales (PostGIS, SQL)
           exp:
             text: "8 ans"
             num: 0.8
-        - text: Géo-traitement & programmation
+        - text: Géo-traitement & développement Python
           exp:
             text: "8 ans"
             num: 0.8
-        - text: Gestion de projet
+        - text: Gestion de projet SIG
           exp:
             text: "8 ans"
             num: 0.8
-        - text: Raportage
+        - text: Automatisation & Rapports (Quarto, QGIS, PowerBI)
           exp:
             text: "8 ans"
             num: 0.8
     - name: Techno
       items:
-        - Git
-        - QGIS
-        - Python
-        - PostgreSQL
-        - Docker
-        - Conda/Dask
-        - Quarto
+        - QGIS, ArcGIS, Google Earth Engine
+        - GeoPandas, GeoDjango
+        - Python, SQL, DBT, H3
+        - PostGIS
+        - OpenLayers, MapLibre
+        - Docker, Conda/Dask
+        - Git, CI/CD Azure DevOps
     - name: Diplômes
       items:
         - text: "Master 2 CARTHAGEO"
           inst: "Université Paris 7, Paris 1 Sorbonne \\& ENSG"
           time: "2009 - 2011"
           details: "Mention Bien"
-    - name: Formations
+    - name: Formation
       items:
-        - text: "SIG"
-          inst: "Institut de Formation à l’Administration Publique(IFAP)"
-          time: "2012 - 2023"
-          details: "FME, ArcGIS, Télédétection, Micmac, PowerBI, ARSET-NASA"
-        - text: "Developpement"
-          inst: "Institut de Formation à l’Administration Publique(IFAP)"
-          time: "2012 - 2023"
-          details: "HTML5, CSS3, Angular, Python Django et Flask, Docker, Elastic Stack, Tomcat, Java Grails/Gorm"
+
+        - time: "2012 - 2023"
+          inst: Institut Formation Publique
+          details: |2-
+            **SIG:**
+            FME, ArcGIS, Télédétection, Micmac, PowerBI, ARSET-NASA
+            
+            **Developpement:**
+            HTML5, CSS3, Python Django et Flask, Docker, Angular, Elastic Stack, Tomcat, Java Grails/Gorm
+
+
+            **[<i class="fa-solid fa-link"></i>](http://localhost:1313/fr/about/)**
+        
 
 execute:
   echo: false
+
 ---
+
 
 ```{r}
 
@@ -127,9 +150,19 @@ cvproj <- function(tbl, what, role, items) {
 ```
 
 
-# Résumé
+Compétences approfondies en cartographie, analyse spatiale, télédétection, développement et  programmation et gestion de projet. Passionné par les solutions open source, l'environnement et la collaboration internationale. Grâce à ses multiples compétences SIG et informatique, je conçoit des solutions complète sur mesure, alliant rigueur technique et innovation.
 
-Expert en géomatique, gestion des données spatiales et programmation. Compétences approfondies en cartographie, analyse spatiale, télédétection, développement et gestion de projet. Passionné par les solutions open source, l'environnement et la collaboration internationale.
+🗺️ **SIG desktop & web** : maîtrise avancée de QGIS, ArcGIS, et Google Earth Engine.
+
+🐍 **Data science avec Python** : traitement de données spatiales, analyse de clusters, et data visualisation.
+
+🗄️ **Gestion de données spatiales** : spécialiste des bases PostGIS, du SQL, du framework DBT et des systèmes d’indexation spatiale comme H3.
+
+🌐 **Données ouvertes** : expertise sur OpenStreetMap, programmes satellite Copernicus et NASA, et bien d'autres sources open data.
+
+📥 **Échange et accès des données collaboratives via API et catalogue** : API REST, Spatio Temporel Asset Catalog (STAC).
+
+
 
 # Expérience
 
