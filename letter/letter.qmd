@@ -1,0 +1,41 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  Association TIGEO
+        department: 
+        address: 15 Rue de Jautzou
+        city: Albi 
+        country: France
+        postal-code: 81000
+address:
+  - hugoroussaffa@gmail.com 
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+
+subject-title: CDD Géomaticien, responsable de projet géomatique
+subject-suffix: "&nbsp;:"
+
+opening: "A l'attention Monsieur le Directeur"
+closing: "Sincèrement,"
+
+format: letter-pdf
+---
+
+Objet : Candidature au poste de géomaticien et responsable de projets
+
+Monsieur Viguier,
+
+Avec environ 15 ans d'expérience en géomatique et en gestion de projet, je suis aujourd'hui à la recherche d'un poste qui me permette de retrouver un cadre professionnel à taille humaine, assez proche de mon domicile, en phase avec mes valeurs et avec une prise de fonction rapide. TIGEO réunit ces critères, notamment par votre engagement dans la valorisation des données géographiques et la mutualisation des compétences clés au service des acteurs des politiques publiques tarnaises. Je déduit que le projet DFCI est un partenariat d'Assistance à Maîtrise d'Ouvrage pour la sécurité civile, ce qui est totalement aligné à mon profil de part mes experiences passées, précisement sur la thématiques des incendies, ce qui pourrait consolider le rôle de TIGEO sur son territoire.
+
+Titulaire d'un Master 2 en sciences humaines avec une spécialisation en géomatique, j'ai acquis une solide expérience en gestion de bases de données spatiales, développement d’applications cartographiques et administration de SIG. Polyvalent, je suis à l'aise aussi bien avec les solutions libres que propriétaires (ESRI). Reconnû pour être force de proposition, j'aime apporter des solutions pragmatiques aux problèmes existants. J'ai mené plusieurs projets en tant qu'assistant à maîtrise d'ouvrage, responsable technique ou développeur, en télédétection et en traitement de données géographiques en lien avec des acteurs publics, associatifs ou privés. Ces collaborations ont permis de réaliser des supports décisonnels pertinents et performant à long terme.
+
+Le projet de déploiement de la base de données géographiques sur la DFCI me semble à la fois technique et concret, ce qui correspond à ce que j'apprécie dans mon travail. Mon expérience en structuration et alimentation de bases PostgreSQL/PostGIS, couplée à mes compétences en automatisation via Python et SQL, me permettrait d’apporter une contribution immédiate et techniauement avancée. J'ai aussi un intérêt particulier pour le développement d’interfaces de visualisation de données et la création de scripts, ce qui correspond aux activités mentionnées dans votre annonce.
+
+Suite à un départ précipité de Nouvelle-Calédonie en raison du contexte économique, social et politique difficile, je souhaite aujourd’hui retrouver une activité professionnelle enrichissante, au sein d'une structure où je peux m'investir pleinement. L’environnement associatif me correspond bien, ayant déjà travaillé dans un cadre similaire où la collaboration et la proximité avec les acteurs du territoire est primordiale.
+
+Je serais en France à partir du 15 mai et en mesure d’être opérationnel rapidement. Concernant mes prétentions salariales, je souhaite un salaire de 2 500 euros nets mensuel, je suis toutefois ouvert à la discussion, notamment si des avantages supplémentaires peuvent être envisagés pour améliorer la proposition. Je suis prêt à apporter mon expérience et mon expertise pour aller au-delà du simple cahier des charges du poste et d’apporter mes conseils et compétences stratégiques au développement de votre structure.
+
+Je serais ravi d’échanger avec vous sur mon parcours et ma motivation lors d'un entretien par visio dans un premier temps.
+
+

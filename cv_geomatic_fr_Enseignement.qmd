@@ -20,7 +20,7 @@ cvfont: raleway
 cvcolor:
   main: "B83B5E"
   accent: "6A2C70"
-jobtitle: Expert en géomatique & gestion de projet de données spatiales
+jobtitle: Enseignant de géomatique & gestion de projet de données spatiales dans le domaine de l'environnement
 sidebar:
   image: portrait.jpg
 
