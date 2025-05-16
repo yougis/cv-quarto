@@ -1,0 +1,47 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  SOGEFI
+        department: 
+        address: 31 bis Rue des Amidonniers
+        city: Toulouse 
+        country: France
+        postal-code: 31000
+address:
+  - Hugo Roussaffa
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+
+subject-title: Géomaticien expert, responsable de projet géomatique
+subject-suffix: "&nbsp;:"
+
+opening: "A l'attention Madame la Directrice générale"
+closing: "Sincèrement,"
+
+
+lang: fr
+
+format: letter-pdf
+---
+
+Objet : Candidature spontanée - géomaticien expert et responsable de projets
+
+
+----
+
+Madame De Sulzer Wart,
+
+
+
+Avec environ 15 ans d'expérience en géomatique et en gestion de projet, je suis aujourd’hui à la recherche d’un poste me permettant de m’investir dans un cadre professionnel à taille humaine, proche de mon domicile, en cohérence avec mes valeurs, et avec une prise de poste rapide. SOGEFI semble réunir ces critères, au regard de son positionnement reconnu dans le domaine de la donnée géographique et de son rôle auprès des acteurs publics et territoriaux.
+
+Titulaire d’un Master 2 en sciences humaines avec une spécialisation en géomatique, j’ai acquis une solide expertise en gestion de bases de données spatiales, développement d’applications cartographiques et administration de SIG. Je travaille aussi bien avec les solutions libres qu’avec les environnements propriétaires (comme ESRI). Reconnu pour être force de proposition, j’ai toujours à cœur d’apporter des solutions concrètes et adaptées aux besoins du terrain.
+
+Au fil de ma carrière, j’ai mené plusieurs projets en tant qu’assistant à maîtrise d’ouvrage, responsable technique ou développeur, dans des contextes variés (collectivités, associations, bureaux d’études). Ces expériences ont nourri une approche rigoureuse, orientée vers la production d’outils décisionnels durables et la structuration de données pertinentes pour les usagers finaux.
+
+Mon expertise en bases de données PostgreSQL/PostGIS, associée à des compétences avancées en Python et SQL, me permet d’intervenir efficacement sur des projets exigeants, qu’il s’agisse de traitement de données, d’automatisation ou de création d’interfaces de visualisation. Je suis également sensible à la qualité documentaire et à la transmission des savoirs, éléments essentiels dans une démarche de valorisation des données.
+
+Suite à un retour en métropole après un départ précipité de Nouvelle-Calédonie, je suis disponible à partir de maintenant pour un engagement rapide et durable. Concernant mes prétentions salariales, je vise un salaire net mensuel de 2 700 euros Net, tout en restant ouvert à la discussion si des avantages complémentaires peuvent être envisagés.
+
+Je serais heureux d’échanger avec vous pour vous exposer de vive voix ma motivation et la manière dont je pourrais contribuer à vos projets. Un premier entretien en visio me conviendrait parfaitement.

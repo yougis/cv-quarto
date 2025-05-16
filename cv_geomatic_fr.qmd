@@ -36,7 +36,7 @@ sidebar:
         - icon: map-marker
           text: Verdun-en-Lauragais (11 - Aude)
         - icon: phone
-          text: "+33 659865534"
+          text: "+33 767214337"
         - icon: envelope
           text: "hugoroussaffa@gmail.com"
         - icon: link
@@ -63,11 +63,11 @@ sidebar:
           exp:
             text: "8 ans"
             num: 0.8
-        - text: Gestion de projet SIG
+        - text: Gestion de projet SCRUM
           exp:
             text: "8 ans"
             num: 0.8
-        - text: Automatisation & Rapports 
+        - text: Automatisation & Rapportage 
           exp:
             text: "5 ans"
             num: 0.5
@@ -78,13 +78,18 @@ sidebar:
     - name: Techno
       items:
         - QGIS, ArcGIS, GEE, QField, ODK
-        - Geoserveur, Mapserver
+        - ArcGIS Online, Geoserveur, Mapserver
         - Python, GeoPandas, Dask, GeoDjango
-        - SQL, DBT, H3, PostGIS, Mysql, Sqlite
+        - GDAL, FME
+        - SQL, DBT, H3
+        - PostGIS, Mysql, Sqlite
         - Lizmap, OpenLayers
         - Docker, Conda
         - Power BI, Plotly, Quarto
         - Git, CI/CD Azure DevOps
+        - Linux, M365, Sharepoint
+        - Fortinet, Active Directory
+        - SSH, RDP, Rsync
     - name: Diplômes
       items:
         - text: "Master 2 CARTHAGEO"
@@ -108,7 +113,7 @@ sidebar:
     - name: Passions
       items:
         - Batterie et guitare
-        - Voyage en voilier
+        - Voyage hauturier en voilier
         - Jeux de plateau / Escape game
 execute:
   echo: false
@@ -148,7 +153,7 @@ cvproj <- function(tbl, what, role, items) {
 
 --- 
 
- Compétences approfondies en cartographie, analyse spatiale, télédétection, développement, programmation et gestion de projet géomatique. Passionné par les solutions open source, l'environnement et la collaboration internationale. Grâce à mes multiples compétences SIG et informatique, je conçois des solutions complètes sur mesure, alliant coopération, rigueur technique et innovation.
+ Compétences approfondies en SIG, cartographie, analyse spatiale, télédétection, traitement de données, développement, programmation et gestion de projet géomatique. Passionné par les solutions open source, l'environnement et la collaboration internationale. Grâce à mes multiples compétences SIG et informatique, je conçois des solutions complètes sur mesure, alliant coopération, rigueur technique et innovation.
 
 ---
 
@@ -176,21 +181,22 @@ tibble::tribble(
   ~role, ~institution, ~dates, ~details,
   "Responsable SI \\& Géomatique", "Observatoire de l'environnement en Nouvelle-Calédonie (OEIL), Nouméa", "06/2021 - 08/2024",
   "Gestion d'équipe (\\faUser \\faUser \\faUser) et encadrement de stages (\\faUsers x 10) , Nombreuses thématiques environnementales abordées (Erosion, incendies, sécheresse végétale, gestion de l'eau, pollution lumineuse, dégradation forestière).\\newline  Administration du SI de l'observatoire, coordination des services numériques avec les partenaires, intégrité et sécurité des données.
-  Maintien et évolution des services numériques, gestion des données, des tableaux de bord et des rapports.\\newline 
-  Analyse des besoins, rédaction des cahiers des charges et des spécifications techniques pour les nouveaux projets.
+  Maintien et évolution des services numériques, gestion des données, des tableaux de bord et des rapports. Développement et automatisation de chaine de traitement complexe en Python. \\newline 
+  Analyse des besoins, estimation des charges, rédaction des cahiers des charges et des spécifications techniques pour les nouveaux projets.
   Promotion et communication sur les activités de l'observatoire en réunion et en public.",
 
  "Enseignant vacataire", "Université Nouméa (NC)", "2024",
-  "Licence Géosciences appliquées, mines, eau et environnement
-  Cours TD/TP de cartographie et SIG avancé avec QGIS.
+  "Enseignement pour étudiant de Licence Géosciences appliquées, mines, eau et environnement.   \\newline 
+  Cours TD/TP de cartographie et SIG avancé avec QGIS.   \\newline 
   Cours TD/TP de photogramterie rapprochée avec Micmac.",
 
+
  "Enseignant vacataire", "Université Nouméa (NC)", "2020",
-  "Master Gestion de l'environnement.
+  "Enseignement pour étudiant de Master Gestion de l'environnement. \\newline 
   Cours TD/TP de télédétection, exploration multispectrale des images Sentinel 2 et pratique avec le logiciel Orfeo ToolBox",
 
-  "Géomaticien, chef de projet", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
-  "Cartographie web, gestion de métadonnées, gestion de services cartographiques, administration de bases de données et maintenance des applications SIG de la collectivité. Accompagnement des utilisateurs dans l'analyse des besoins. Thématiques abordées : développement rural, environnement, archéologie, gestion des infrastructure routières, logement social et éducation.",
+  "Géomaticien, Ingénieur SIG", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
+  "Cartographie web, gestion de métadonnées, gestion de services cartographiques, gestion de flux de données, développement web et plugin desktop QGIS, création d'interface UX, administration de bases de données et maintenance des applications SIG de la collectivité. Accompagnement des utilisateurs dans l'analyse des besoins, estimation des charges, définition des specifications techniques détaillées, suivi des tâches des projets et reporting. Multitude de thématiques abordées : développement rural, environnement, archéologie, gestion des infrastructure routières, logement social et éducation.",
 
   "Entrepreneur - GeoDatup", "Maison de l'initiative, Toulouse (FR)", "04/2016 - 05/2018",
   "Développement de plugins, formation QGIS, réalisation orthophotographie par drone.",

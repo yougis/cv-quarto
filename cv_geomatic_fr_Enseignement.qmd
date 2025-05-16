@@ -36,7 +36,7 @@ sidebar:
         - icon: map-marker
           text: Verdun-en-Lauragais (11 - Aude)
         - icon: phone
-          text: "+33 659865534"
+          text: "+33 767214337"
         - icon: envelope
           text: "hugoroussaffa@gmail.com"
         - icon: link
@@ -78,13 +78,18 @@ sidebar:
     - name: Techno
       items:
         - QGIS, ArcGIS, GEE, QField, ODK
-        - Geoserveur, Mapserver
+        - ArcGIS Online, Geoserveur, Mapserver
         - Python, GeoPandas, Dask, GeoDjango
-        - SQL, DBT, H3, PostGIS, Mysql, Sqlite
+        - GDAL, FME
+        - SQL, DBT, H3
+        - PostGIS, Mysql, Sqlite
         - Lizmap, OpenLayers
         - Docker, Conda
         - Power BI, Plotly, Quarto
         - Git, CI/CD Azure DevOps
+        - Linux, M365, Sharepoint
+        - Fortinet, Active Directory
+        - SSH, RDP, Rsync
     - name: Diplômes
       items:
         - text: "Master 2 CARTHAGEO"
@@ -108,8 +113,8 @@ sidebar:
     - name: Passions
       items:
         - Batterie et guitare
-        - Voyage en voilier
-        - Jeux de plateau / Escape game
+        - Voyage hauturier en voilier
+        - Jeux de plateau / Escape game / Echec
 execute:
   echo: false
 
@@ -148,7 +153,7 @@ cvproj <- function(tbl, what, role, items) {
 
 --- 
 
- Compétences approfondies en cartographie, analyse spatiale, télédétection, développement, programmation et gestion de projet géomatique. Passionné par les solutions open source, l'environnement et la collaboration internationale. Grâce à mes multiples compétences SIG et informatique, je conçois des solutions complètes sur mesure, alliant coopération, rigueur technique et innovation.
+ Compétences approfondies en cartographie, SIG, analyse spatiale, télédétection, développement, programmation et gestion de projet géomatique. Passionné par les solutions open source, l'environnement et la collaboration internationale. Formateur en SIG appliqué à l'écologie et à l’environnement, je transmets avec pédagogie et clarté des savoirs techniques pointus en m’adaptant aux besoins spécifiques de publics variés, qu’ils soient étudiants ou professionnels. Grâce à mes multiples compétences SIG et informatique, je conçois des solutions complètes sur mesure, alliant coopération, rigueur technique et innovation.
 
 ---
 
@@ -159,7 +164,7 @@ cvproj <- function(tbl, what, role, items) {
 
 {{< fa database >}} **Gestion de données spatiales** : spécialiste des bases PostGIS, SQL, framework DBT et des systèmes d’indexation spatiale comme H3.
 
-{{< fa globe >}} **Données ouvertes** : expertise sur OpenStreetMap, programmes satellite Copernicus et NASA, et bien d'autres sources open data Françaises.  
+{{< fa globe >}} **Données ouvertes** : expertise sur OpenStreetMap, programmes satellite Copernicus et NASA, géoportail IGN et bien d'autres sources open data Françaises.  
 
 {{< fa download >}} **Échange et accès des données collaboratives via API et catalogue** : API REST, Spatio Temporel Asset Catalog (STAC), INSPIRE.  
 
@@ -174,31 +179,35 @@ library(tibble)
 
 tibble::tribble(
   ~role, ~institution, ~dates, ~details,
-  "Responsable SI \\& Géomatique", "Observatoire de l'environnement en Nouvelle-Calédonie (OEIL), Nouméa", "06/2021 - 08/2024",
-  "Gestion d'équipe (\\faUser \\faUser \\faUser) et encadrement de stages (\\faUsers x 10) , Nombreuses thématiques environnementales abordées (Erosion, incendies, sécheresse végétale, gestion de l'eau, pollution lumineuse, dégradation forestière).\\newline  Administration du SI de l'observatoire, coordination des services numériques avec les partenaires, intégrité et sécurité des données.
+  "Responsable SI \\& Géomatique", "Observatoire de l'environnement en Nouvelle-Calédonie (OEIL), Nouméa", "2021 - 3 ans",
+  "Gestion d'équipe (\\faUser \\faUser \\faUser) et encadrement de stages (\\faUsers x 10). Nombreuses thématiques environnementales abordées (Erosion, incendies, sécheresse végétale, gestion de l'eau, pollution lumineuse, dégradation forestière).\\newline  Administration du SI de l'observatoire, coordination des services numériques avec les partenaires, intégrité et sécurité des données.
   Maintien et évolution des services numériques, gestion des données, des tableaux de bord et des rapports.\\newline 
   Analyse des besoins, rédaction des cahiers des charges et des spécifications techniques pour les nouveaux projets.
   Promotion et communication sur les activités de l'observatoire en réunion et en public.",
 
- "Enseignant vacataire", "Université Nouméa (NC)", "2024",
-  "Licence Géosciences appliquées, mines, eau et environnement
-  Cours TD/TP de cartographie et SIG avancé avec QGIS.
+"Enseignant vacataire", "Université Nouméa (NC)", "2024",
+  "Enseignement pour étudiant de Licence Géosciences appliquées, mines, eau et environnement.   \\newline 
+  Cours TD/TP de cartographie et SIG avancé avec QGIS.   \\newline 
   Cours TD/TP de photogramterie rapprochée avec Micmac.",
 
+
  "Enseignant vacataire", "Université Nouméa (NC)", "2020",
-  "Master Gestion de l'environnement.
+  "Enseignement pour étudiant de Master Gestion de l'environnement. \\newline 
   Cours TD/TP de télédétection, exploration multispectrale des images Sentinel 2 et pratique avec le logiciel Orfeo ToolBox",
 
-  "Géomaticien, chef de projet", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
+  "Géomaticien, chef de projet", "Province Sud, Nouméa (NC)", "2011 - 10 ans",
   "Cartographie web, gestion de métadonnées, gestion de services cartographiques, administration de bases de données et maintenance des applications SIG de la collectivité. Accompagnement des utilisateurs dans l'analyse des besoins. Thématiques abordées : développement rural, environnement, archéologie, gestion des infrastructure routières, logement social et éducation.",
 
-  "Entrepreneur - GeoDatup", "Maison de l'initiative, Toulouse (FR)", "04/2016 - 05/2018",
-  "Développement de plugins, formation QGIS, réalisation orthophotographie par drone.",
 
-  "Consultant plateforme de données", "ONG Fauna Flora International (Myanmar)", "05/2015 - 07/2015",
-  "Mise en place d'une plateforme collaborative de partage données (CKAN). Automatisation et traitement données spatiales. Capacité d'adaptation rapide dans ce contexte multiculturel.",
+  "Entrepreneur - GeoDatup", "Maison de l'initiative, Toulouse (FR)", "2016 - 2 ans",
+  "Formation pour SIG sur QGIS dans le centre de formation Vertego à Pau \\faLink~\\href{https://www.vertego.fr/formation/qgis}{Détail de la formation}.
+  \\newline 
+  Développement de plugins QGIS, réalisation orthophotographie par drone.",
 
-  "Chef de projet statistiques", "CEDET Université Paris 7 Diderot", "2009 - 2010",
+  "Consultant plateforme de données", "ONG Fauna Flora International (Myanmar)", "05/2015 - 2 mois",
+  "Mise en place d'une plateforme collaborative de partage données spatiales (CKAN). Automatisation et traitement données environnementales. Capacité d'adaptation rapide dans ce contexte professionnel multiculturel.",
+
+  "Chef de projet statistiques", "CEDET Université Paris 7 Diderot", "2009 - 1 ans",
   "GéoStatistique, analyses multivariées ACP/AFC/CAH, data visualisation.",
 
 

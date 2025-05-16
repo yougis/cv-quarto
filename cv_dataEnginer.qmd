@@ -53,10 +53,14 @@ sidebar:
         - DBT
         - Conda, Dask
         - Git
+        - SSH, RDP, Rsync
         - Quarto
         - Elastic Stack
         - Angular
         - QGIS
+        - CI/CD Azure DevOps
+        - Linux, M365, Sharepoint
+        - Fortinet, Active Director
     - name: Diplômes
       items:
         - text: "Master 2 CARTHAGEO"
