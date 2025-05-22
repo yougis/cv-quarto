@@ -2,21 +2,21 @@
 author:
   - name: Roussaffa Hugo
     affiliation:
-      - name:  Chambre des metiers du Tarn
+      - name:  CONSEIL DEPARTEMENTAL DE LA HAUTE-GARONNE
         department: 
-        address: Allée Notre Dame 
-        city: Sorèze 
+        address: 1 BOULEVARD DE LA MARQUETTE 
+        city: Toulouse 
         country: France
-        postal-code: 81540
+        postal-code: 31000
 address:
   - Hugo Roussaffa
   - 3 chemin de Rouyre Haut
   - Verdun-en-Lauragais 11400
 
-subject-title: Professeur en numérique
+subject-title: Référent Système d'Information
 subject-suffix: "&nbsp;:"
 
-opening: "Objet : Candidature au poste de professeur en numérique - Sorèze"
+opening: "Objet : Candidature au poste de Référent Système d'Information - Offre n° O031250424001280"
 closing: "Sincèrement,"
 
 
