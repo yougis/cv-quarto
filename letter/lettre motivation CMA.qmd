@@ -1,0 +1,41 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  Chambre des metiers du Tarn
+        department: 
+        address: Allée Notre Dame 
+        city: Sorèze 
+        country: France
+        postal-code: 81540
+address:
+  - Hugo Roussaffa
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+
+subject-title: Professeur en numérique
+subject-suffix: "&nbsp;:"
+
+opening: "Objet : Candidature au poste de professeur en numérique - Sorèze"
+closing: "Sincèrement,"
+
+
+lang: fr
+
+format: letter-pdf
+---
+
+
+Madame, Monsieur,
+
+Professionnel de la géomatique avec plus de 14 ans d'expérience, je souhaite aujourd’hui m’engager dans la transmission des savoirs numériques auprès des jeunes générations. L’offre de professeur en numérique proposée par la Chambre de métiers et de l’artisanat du Tarn représente pour moi une opportunité pour allier mon expertise technique à ma passion pour la pédagogie et le numérique. Le format d'une mission de courte durée me convient aussi parfaitement, bien que restant ouvert à d'autres opportunités par la suite.
+
+Titulaire d’un Master 2 en géomatique, j’ai évolué dans des environnements variés mêlant dessin assisté par ordinateur (DAO) analyse spatiale et statistique, programmation, traitement de données, et développement d’applications á dimension cartographique. La géomatique est une discipline profondément ancrée dans les sciences numériques : elle mobilise des compétences en base de données, algorithmie, automatisation via des langages comme Python ou SQL, visualisation interactive des données (dataviz), et développement web (HTML/CSS/JavaScript). Ces compétences sont transversales et me permettent d’intervenir sur un large éventail de thématiques : bureautique, internet, culture numérique, mais aussi sujets techniques comme le traitement de données ou le développement informatique.
+
+Côté pédagogique, j’ai assuré à trois reprises des cours de TD et TP en milieu universitaire, notamment en tant que vacataire à l’Université de Nouvelle-Calédonie sur les thématiques de SIG, télédétection et photogrammétrie. Plus tôt dans mon parcours, j’ai été tuteur informatique à l’Université de Poitiers (2006) puis à l’Université Paris 7 (2008), où j’accompagnais les étudiants dans la validation de leur C2i (Certificat informatique et internet).
+
+Par ailleurs, mes expériences en gestion de projets et en accompagnement de partenaires institutionnels m'ont permis de m'engager dans le suivi de nombreux stagiaires, aux échanges réguliers avec les structures d’accueil et à une communication fluide avec différents acteurs  (entreprises, familles, équipes pédagogiques). Je pratique une pédagogie qui accompagne individuellement les apprenants, valorise l’expérimentation, l’esprit critique et la prise d’autonomie. Cette approche me semble particulièrement pertinente dans un contexte de formation professionnelle. 
+
+Disponible dès aujourd´hui, je suis prêt à m’investir dans votre structure, avec rigueur et enthousiasme. Je me tiens à votre disposition pour un échange.
+
+Je vous remercie pour l’attention portée à ma candidature et vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.

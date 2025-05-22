@@ -1,0 +1,39 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  EGIS
+        department: 
+        address: 9, rue Paul Mesplé
+        city: Toulouse 
+        country: France
+        postal-code:  31106 
+address:
+  - Hugo Roussaffa
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+
+subject-title: TECHNICIEN SIG
+subject-suffix: "&nbsp;:"
+
+opening: "Objet :  Candidature au poste TECHNICIEN SIG"
+closing: "Sincèrement,"
+
+
+lang: fr
+
+format: letter-pdf
+---
+
+
+Madame, Monsieur,
+
+Avec plus de 14 ans d’expérience dans le domaine des Systèmes d’Information Géographique, je maîtrise à la fois les outils bureautiques et les logiciels professionnels (QGIS, ArcGIS, FME, AutoCAD Map), ainsi que les bases de données spatiales et les langages de traitement de données (SQL, Python). J’ai travaillé sur des projets variés impliquant la gestion, la mise à jour, le traitement et la valorisation de données géographiques à destination de collectivités, de bureaux d’études ou d’associations.
+
+Ma formation universitaire en géomatique et mon expérience professionnel m’ont permis d’acquérir une excellente connaissance des données référentielles (BD TOPO, Cadastre, PCRS, réseaux), des formats SIG standards (GDB, SHP, GeoJSON, GPKG), et des méthodes de contrôle qualité et de structuration des données. Je suis à l’aise pour analyser des besoins métiers, produire des cartographies précises, et documenter les traitements effectués pour garantir leur traçabilité.
+
+Autonome, rigoureux, mais également communicatif et à l’écoute, je sais m’intégrer dans une équipe projet tout en gérant mes priorités. Je suis particulièrement motivé à rejoindre un groupe reconnu comme Egis, dont les projets territoriaux et les valeurs d’expertise et d’innovation correspondent à mes attentes professionnelles.
+
+Bien que mon parcours est davantage orienté vers des fonctions d’expertise ou de coordination, je suis aujourd’hui en recherche active d’un poste à durée déterminée, dans lequel je peux m’impliquer rapidement et efficacement. Une mission de six mois correspond parfaitement à mes attentes actuelles. Je suis volontaire pour intervenir sur des tâches de production SIG, en lien direct avec les données, les outils et les besoins concrets du terrain. Travailler de façon opérationnelle, en soutien à une équipe projet, est une perspective qui me motive pleinement. Mon expérience me permet d’être immédiatement autonome tout en m’intégrant facilement dans votre organisation. je n'exclue pas pour autant d'autres opportunitées ulterieurs EGIS, à Toulouse ou ailleurs dans le monde.
+
+Dans l'attente d'un echange verbal avec l'équipe EGIS de Toulouse,

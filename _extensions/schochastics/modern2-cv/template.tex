@@ -491,7 +491,7 @@ $endif$
 		%	META SKILLS
 		%----------------------------------------------------------------------------------------
 		$for(sidebar.bullets)$
-		\icontext{caret-right}{12}{$it$}\\[6pt]
+		\icontext{caret-right}{-5}{$it$}\\[6pt]
 		$endfor$
 
 		$for(sidebar.sections)$
@@ -500,13 +500,20 @@ $endif$
 
 		$for(sidebar.sections.items)$
 		$if(sidebar.sections.items.exp)$
-		\cvskill{$sidebar.sections.items.text$}{$sidebar.sections.items.exp.text$}{$sidebar.sections.items.exp.num$} \\[10pt]
+			$if(sidebar.sections.items.icon)$			
+			\icontext{$sidebar.sections.items.icon$}{-5}{\cvskill{$sidebar.sections.items.text$}{$sidebar.sections.items.exp.text$}{$sidebar.sections.items.exp.num$}}\\[10pt]
+			$else$
+			\cvskill{$sidebar.sections.items.text$}{$sidebar.sections.items.exp.text$}{$sidebar.sections.items.exp.num$} \\[10pt]
+			$endif$
 		$elseif(sidebar.sections.items.inst)$
 		\cvmetaevent{$sidebar.sections.items.time$}{$sidebar.sections.items.text$}{$sidebar.sections.items.inst$}{$sidebar.sections.items.details$}
 		$elseif(sidebar.sections.items.href)$
-		\iconhref{$sidebar.sections.items.icon$}{16}{$sidebar.sections.items.text$}{$sidebar.sections.items.href$}\\[6pt]
+		\iconhref{$sidebar.sections.items.icon$}{-5}{$sidebar.sections.items.text$}{$sidebar.sections.items.href$}\\[6pt]
 		$elseif(sidebar.sections.items.icon)$
-		\icontext{$sidebar.sections.items.icon$}{16}{$sidebar.sections.items.text$}\\[6pt]
+		\icontext{$sidebar.sections.items.icon$}{-5}{$sidebar.sections.items.text$}\\[6pt]
+		$elseif(sidebar.sections.items.faicon)$
+		\faIcon{$sidebar.sections.items.icon$}{16}{$sidebar.sections.items.text$}\\[6pt]
+
 		$else$
 		\icontext{caret-right}{12}{$it$}\\[6pt]
 		$endif$

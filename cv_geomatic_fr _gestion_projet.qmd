@@ -1,0 +1,257 @@
+---
+title: Hugo ROUSSAFFA
+format:
+  modern2-cv-pdf: default
+  pdf:
+    colorlinks: true
+    documentclass: scrreprt
+    pdf-engine: lualatex
+    include-in-header:
+    - text: |
+       \usepackage{emoji}
+    #pdf-engine: xelatex
+    mainfont: "Noto Sans"
+    fontsize: 11pt
+    
+  html:
+    from: markdown+emoji
+author: Hugo Roussaffa
+cvfont: raleway
+cvcolor:
+  main: "B83B5E"
+  accent: "6A2C70"
+jobtitle: Expert en géomatique & gestion de projet de données spatiales
+sidebar:
+  image: portrait.jpg
+
+  bullets:
+    - Français
+    - Marié, 2 enfants
+    - Permis voiture / Drone / Bâteau côtier & hauturier
+
+  sections:
+      
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Verdun-en-Lauragais (11 - Aude)
+        - icon: phone
+          text: "+33 767214337"
+        - icon: envelope
+          text: "hugoroussaffa@gmail.com"
+        - icon: link
+          text: "Portfolio"
+          href: "https://yougis.github.io/portfolio-hugo/fr/"
+        - icon: github
+          text: "yougis"
+          href: "https://github.com/yougis"
+        - icon: linkedin
+          text: "hugo-roussaffa"
+          href: "https://linkedin.com/in/hugo-roussaffa"
+
+    - name: Compétences
+      items:
+        - text: SIG, cartographie, télédétection
+          exp:
+            text: "+14 ans"
+            num: 1
+          icon : layer-group
+        - text: Data, analyse spatiale & statistiques
+          exp:
+            text: "+14 ans"
+            num: 1
+          icon: rocket
+        - text: Gestion de projet
+          exp:
+            text: "8 ans"
+            num: 0.8
+          icon : people-carry
+        - text: Géo-traitement & développement
+          exp:
+            text: "8 ans"
+            num: 0.8
+          icon: whmcs
+        - text:  Management
+          exp:
+            text: "3 ans"
+            num: 0.3
+          icon: users
+    - name: Techno
+      items:
+        - text : QGIS, ArcGIS, GEE, QField, ODK, Lizmap, OpenLayers
+          icon : layer-group
+        - text : Python, GeoPandas, Dask, GeoDjango
+          icon : python
+        - text : GDAL, FME, SQL, PostGIS, DBT
+          icon : database
+        - text : Power BI, Plotly, Quarto
+          icon : chart-bar
+        - text : Copernicus, IGN, NASA, OSM
+          icon : globe
+        - text : REST API, STAC, INSPIRE
+          icon : upload
+
+    - name: Diplômes
+      items:
+        - text: "Master 2 CARTHAGEO"
+          inst: "Université Paris 7, Paris 1 Sorbonne \\& ENSG"
+          time: "2009 - 2011"
+          details: "Mention Bien"
+    - name: Formation
+      items:
+
+        - time: "2012 - 2023"
+          inst: Institut Formation Publique
+          details: |2-
+            **DATA & SIG:**
+            FME, ArcGIS, Télédétection, MicMac, PowerBI, ARSET-NASA
+            
+            **Dév :**
+            HTML5, CSS3, Python Django et Flask, Docker, Angular, Elastic Stack, Tomcat, Java Grails/Gorm
+
+            [{{< fa link >}} Consulter les certificats](https://yougis.github.io/portfolio-hugo/fr/about/)
+    
+    - name: Passions
+      items:
+        - Batterie et guitare
+        - Voyage hauturier en voilier
+        - Jeux de stratégie / Escape game
+execute:
+  echo: false
+
+---
+
+
+```{r}
+
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+cvproj <- function(tbl, what, role, items) {
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x) paste0(x, collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+
+
+```
+
+--- 
+
+ Compétences approfondies en SIG, cartographie, analyse spatiale, télédétection, traitement de données, développement, programmation et gestion de projet géomatique. Passionné par les solutions open source, l'environnement et la collaboration internationale. Grâce à mes multiples compétences SIG et informatique, je conçois des solutions complètes sur mesure, alliant coopération, rigueur technique et innovation.
+
+---
+
+
+{{< fa map >}} **SIG desktop, web et serveur** : maîtrise avancée de QGIS, ArcGIS, GEE, Lizmap, OpenLayer, GeoNode, Geoserver, Mapserver etc.  
+
+{{< fa brands python >}} **Data science avec Python** : traitement, stockage, analyse spatiales et data visualisation.  
+
+{{< fa database >}} **Gestion de données spatiales** : spécialiste des bases PostGIS, SQL, framework DBT et des systèmes d’indexation spatiale comme H3.
+
+{{< fa globe >}} **Données ouvertes** : expertise sur OpenStreetMap, programmes satellite Copernicus et NASA, et bien d'autres sources open data Françaises.  
+
+{{< fa download >}} **Échange et accès des données collaboratives via API et catalogue** : API REST, Spatio Temporel Asset Catalog (STAC), INSPIRE.  
+
+
+# Expériences
+
+```{r}
+#| label: experience
+#| output: asis
+
+library(tibble)
+
+tibble::tribble(
+  ~role, ~institution, ~dates, ~details,
+  "Responsable SI \\& Géomatique", "Observatoire de l'environnement en Nouvelle-Calédonie (OEIL), Nouméa", "06/2021 - 08/2024",
+  "Gestion d'équipe (\\faUser \\faUser \\faUser) et encadrement de stages (\\faUsers x 10) , Nombreuses thématiques environnementales abordées (Erosion, incendies, sécheresse végétale, gestion de l'eau, pollution lumineuse, dégradation forestière).\\newline  Administration du SI de l'observatoire, coordination des services numériques avec les partenaires, intégrité et sécurité des données.
+  Maintien et évolution des services numériques, gestion des données, des tableaux de bord et des rapports. Développement et automatisation de chaine de traitement complexe en Python. \\newline 
+  Analyse des besoins, estimation des charges, rédaction des cahiers des charges et des spécifications techniques pour les nouveaux projets.
+  Promotion et communication sur les activités de l'observatoire en réunion et en public.",
+
+ "Enseignant vacataire", "Université Nouméa (NC)", "2024",
+  "Enseignement pour étudiant de Licence Géosciences appliquées, mines, eau et environnement.   \\newline 
+  Cours TD/TP de cartographie et SIG avancé avec QGIS.   \\newline 
+  Cours TD/TP de photogramterie rapprochée avec Micmac.",
+
+
+ "Enseignant vacataire", "Université Nouméa (NC)", "2020",
+  "Enseignement pour étudiant de Master Gestion de l'environnement. \\newline 
+  Cours TD/TP de télédétection, exploration multispectrale des images Sentinel 2 et pratique avec le logiciel Orfeo ToolBox",
+
+  "Géomaticien, Ingénieur SIG", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
+  "Cartographie web, gestion de métadonnées, gestion de services cartographiques, gestion de flux de données, développement web et plugin desktop QGIS, création d'interface UX, administration de bases de données et maintenance des applications SIG de la collectivité. Accompagnement des utilisateurs dans l'analyse des besoins, estimation des charges, définition des specifications techniques détaillées, suivi des tâches des projets et reporting. Multitude de thématiques abordées : développement rural, environnement, archéologie, gestion des infrastructure routières, logement social et éducation.",
+
+  "Entrepreneur - GeoDatup", "Maison de l'initiative, Toulouse (FR)", "04/2016 - 05/2018",
+  "Développement de plugins, formation QGIS, réalisation orthophotographie par drone.",
+
+  "Consultant plateforme de données", "ONG Fauna Flora International (Myanmar)", "05/2015 - 07/2015",
+  "Mise en place d'une plateforme collaborative de partage données (CKAN). Automatisation et traitement données spatiales. Capacité d'adaptation rapide dans ce contexte multiculturel.",
+
+  "Chef de projet statistiques", "CEDET Université Paris 7 Diderot", "2009 - 2010",
+  "GéoStatistique, analyses multivariées ACP/AFC/CAH, data visualisation.",
+
+
+  "Publications", "25th International Cartographic Conference (ICC11)", "2011",
+  "- Christophe S., Zanin C., Roussaffa H. (2011), Colours Harmony in Cartography. 
+  \\faLink~\\href{https://www.researchgate.net/publication/236330793_Colours_harmony_in_cartography}{Article en détail}
+  \\newline 
+  - Quentin Borderie, Gabriel Chamaux, Hugo Roussaffa (2017), La couverture lœssique d’Eure-et-Loir (France) : Potentiel pédo-sedimentaire et organisation spatiale. \\faLink~\\href{https://doi.org/10.4000/quaternaire.8331}{Article en détail}
+  ",
+
+  "Mémoires Master", "Université Paris Diderot Paris 7", "2009 - 2011",
+  "- Roussaffa H., Mathian H., Rinck N. (2011), Gestion du cycle de vie des données environnementales.\\newline 
+  - Roussaffa H., Zanin C., Christophe S. (2009), Caractérisation de l´harmonie des couleurs dans une carte."
+
+
+) |> cvevents("dates", "role", "institution", "details")
+
+```
+
+# Réferences
+
+{{< fa envelope >}} Fabien Albouy - fabien.albouy@oeil.nc : Directeur de l'Observatoire de l'environnement en Nouvelle-Calédonie.
+
+{{< fa envelope >}} Sebastien Guenier  - sebastien.guenier@province-sud.nc : Directeur du Système d'information de la Province Sud Nouvelle_Calédonie.
+
+# Projets
+
+```{r}
+#| label: projects
+#| output: asis
+
+tibble::tribble(
+  ~what, ~role, ~items,
+  "Détection et suivi d'incendies", "Responsable technique", c("Traitement données FIRMS", "classification de données Sentinel-2","photointerpretation collaborative avec Collect Earth Online", "exploitation catalogue STAC et GEE", "création de tableau de bord ESRI, rapports et atlas automatisés Quarto/QGIS \\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/atlas-qgis/}{Atlas en détail} \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/dashboards/vulcain/}{Dashboard en détail}"),
+
+  "Suivi sécheresse végétale", "Responsable technique", c("Indicateurs satellites (VAI et VHI) résolution spatiale de 10m-250m et temporelle de 10 jours (L8, L9, S2, MODIS, ASCAT)", "Développement python, déploiement et intégration continue avec Azure Devops. \\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/secheresse-vegetale/}{Projet en détail}"),
+
+  "Pollution lumineuse", "Responsable technique", c("Cartographie VIIRS, analyse spatiale", "Atlas cartographique, tableau de bord\\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/dashboards/pollux/}{Dashboard en détail}"),
+
+  "Couverture forestière", "Responsable technique", c("Exploitation des données Tropical Moist Forest et Global Forest Change, réalisation d'analyses spatiales et géotraitements."),
+
+  "Protection eau potable", "Responsable technique", c("Suivi pressions environnementales sur la ressource en eau", "Tableaux de bord décisionnels\\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/dashboards/ppe/}{Dashboard en détail}"),
+
+  "SI Décisionnel", "Architecte et Ingenieur des données", c( "Traitement géospatial Python et distribution des traitements parallelisés avec Dask sur un cluster de machine",
+"Mise en oeuvre ELT avec DBT, indexation des données sur grille H3",  
+"Mise en place des Dataviz et automatisation des rapports",
+"Postgres, gestion des droits, backup décentralisé avec Barman",
+"Déploiement de serveurs Docker et orchestration avec Portainer. Utilisation d’environnements Conda, Linux, SSH, Git, CI Azure DevOps" ,"\\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/bilbo/}{Article en détail}")) |> cvproj("what", "role", "items")
+```
