@@ -155,7 +155,7 @@ cvproj <- function(tbl, what, role, items) {
 
 --- 
 
-Chef de projet spécialisé en géomatique, j’allie expertise en SIG, analyse spatiale, télédétection et développement informatique pour concevoir et piloter des projets autour de la donnée. Sensible aux enjeux environnementaux, je m’engage dans des démarches collaboratives où l’innovation technique, la clarté des résultats (dataviz, modèles, services) et la cohérence des méthodes sont au cœur de ma pratique.
+Chef de projet spécialisé en géomatique, j’allie expertise en SIG, analyse spatiale, télédétection et développement informatique pour concevoir et piloter des projets autour de la donnée. Sensible aux enjeux environnementaux, je m’engage dans des démarches collaboratives où l’innovation technique, la clarté des résultats (dataviz, modèles, services) et la cohérence des méthodes sont au coeur de ma pratique.
 
 ---
 

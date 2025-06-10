@@ -1,0 +1,551 @@
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2019 Jan Küster
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+
+%============================================================================%
+%
+%	DOCUMENT DEFINITION
+%
+%============================================================================%
+
+\documentclass[10pt,A4,english]{article}	
+
+
+%----------------------------------------------------------------------------------------
+%	ENCODING
+%----------------------------------------------------------------------------------------
+
+% we use utf8 since we want to build from any machine
+\usepackage[utf8]{inputenc}		
+\usepackage[USenglish]{isodate}
+\usepackage{fancyhdr}
+% \usepackage[numbers]{natbib}
+
+%----------------------------------------------------------------------------------------
+%	LOGIC
+%----------------------------------------------------------------------------------------
+
+% provides \isempty test
+\usepackage{xstring, xifthen}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{pdfpages}
+\usepackage{changepage}
+%----------------------------------------------------------------------------------------
+%	FONT BASICS
+%----------------------------------------------------------------------------------------
+
+% some tex-live fonts - choose your own
+\usepackage[default]{raleway}
+
+% set font default
+\renewcommand*\familydefault{\sfdefault} 	
+\usepackage[T1]{fontenc}
+
+% more font size definitions
+\usepackage{moresize}
+
+%----------------------------------------------------------------------------------------
+%	FONT AWESOME ICONS
+%---------------------------------------------------------------------------------------- 
+
+% include the fontawesome icon set
+\usepackage{fontawesome5}
+
+% use to vertically center content
+% credits to: http://tex.stackexchange.com/questions/7219/how-to-vertically-center-two-images-next-to-each-other
+\newcommand{\vcenteredinclude}[1]{\begingroup
+\setbox0=\hbox{\includegraphics{#1}}%
+\parbox{\wd0}{\box0}\endgroup}
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+% use to vertically center content
+% credits to: http://tex.stackexchange.com/questions/7219/how-to-vertically-center-two-images-next-to-each-other
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
+
+% icon shortcut
+\newcommand{\icon}[2] { 							
+	\makebox(#2, #2){\textcolor{maincol}{\textcolor{maincol}{\faIcon{#1}}}}
+}	
+
+
+% icon with text shortcut
+\newcommand{\icontext}[3]{ 						
+	\vcenteredhbox{\icon{#1}{#2}}  \hspace{2pt}  \parbox{0.9\mpwidth}{\textcolor{black}{#3}}
+}
+
+% icon with website url
+\newcommand{\iconhref}[4]{ 						
+    \vcenteredhbox{\icon{#1}{#2}}  \hspace{2pt} \href{#4}{\textcolor{black}{#3}}
+}
+
+% icon with email link
+\newcommand{\iconemail}[5]{ 						
+    \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{mailto:#4}{\textcolor{#5}{#3}}
+}
+
+%----------------------------------------------------------------------------------------
+%	PAGE LAYOUT  DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+% page outer frames (debug-only)
+% \usepackage{showframe}		
+
+% we use paracol to display breakable two columns
+\usepackage{paracol}
+\usepackage{tikzpagenodes}
+\usetikzlibrary{calc}
+\usepackage{lmodern}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{atbegshi}
+% define page styles using geometry
+\usepackage[a4paper]{geometry}
+
+% remove all possible margins
+\geometry{top=1cm, bottom=1cm, left=1cm, right=1cm}
+
+\usepackage{fancyhdr}
+\pagestyle{empty}
+
+% space between header and content
+% \setlength{\headheight}{0pt}
+
+% indentation is zero
+\setlength{\parindent}{0mm}
+
+%----------------------------------------------------------------------------------------
+%	TABLE /ARRAY DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+% extended aligning of tabular cells
+\usepackage{array}
+
+% custom column right-align with fixed width
+% use like p{size} but via x{size}
+\newcolumntype{x}[1]{%
+>{\raggedleft\hspace{0pt}}p{#1}}%
+
+
+%----------------------------------------------------------------------------------------
+%	GRAPHICS DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+%for header image
+\usepackage{graphicx}
+
+% use this for floating figures
+% \usepackage{wrapfig}
+% \usepackage{float}
+% \floatstyle{boxed} 
+% \restylefloat{figure}
+
+%for drawing graphics		
+\usepackage{tikz}			
+\usepackage{ragged2e}	
+\usetikzlibrary{shapes, backgrounds,mindmap, trees}
+
+%----------------------------------------------------------------------------------------
+%	Bibliography
+%---------------------------------------------------------------------------------------- 
+
+%----------------------------------------------------------------------------------------
+%	Color DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+\usepackage{transparent}
+\usepackage{color}
+
+% primary color
+\definecolor{maincol}{HTML}{B83B5E}
+
+% accent color, secondary
+% \definecolor{accentcol}{RGB}{ 250, 150, 10 }
+
+% dark color
+\definecolor{darkcol}{RGB}{ 70, 70, 70 }
+
+% light color
+\definecolor{lightcol}{RGB}{245,245,245}
+
+\definecolor{accentcol}{HTML}{6A2C70}
+
+
+
+% Package for links, must be the last package used
+\usepackage[hidelinks]{hyperref}
+
+% returns minipage width minus two times \fboxsep
+% to keep padding included in width calculations
+% can also be used for other boxes / environments
+\newcommand{\mpwidth}{\linewidth-\fboxsep-\fboxsep}
+	
+
+
+%============================================================================%
+%
+%	CV COMMANDS
+%
+%============================================================================%
+
+%----------------------------------------------------------------------------------------
+%	 CV LIST
+%----------------------------------------------------------------------------------------
+
+% renders a standard latex list but abstracts away the environment definition (begin/end)
+\newcommand{\cvlist}[1] {
+	\begin{itemize}{#1}\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	 CV TEXT
+%----------------------------------------------------------------------------------------
+
+% base class to wrap any text based stuff here. Renders like a paragraph.
+% Allows complex commands to be passed, too.
+% param 1: *any
+\newcommand{\cvtext}[1] {
+	\begin{tabular*}{1\mpwidth}{p{0.98\mpwidth}}
+		\parbox{1\mpwidth}{#1}
+	\end{tabular*}
+}
+\newcommand{\cvtextsmall}[1] {
+	\begin{tabular*}{0.8\mpwidth}{p{0.8\mpwidth}}
+		\parbox{0.8\mpwidth}{#1}
+	\end{tabular*}
+}
+%----------------------------------------------------------------------------------------
+%	CV SECTION
+%----------------------------------------------------------------------------------------
+
+% Renders a a CV section headline with a nice underline in main color.
+% param 1: section title
+\newlength{\barw}
+\newcommand{\cvsection}[1] {
+	\vspace{14pt}
+	\settowidth{\barw}{\textbf{\LARGE #1}}
+	\cvtext{
+		\textbf{\LARGE{\textcolor{darkcol}{#1}}}\\[-4pt]
+		\textcolor{accentcol}{ \rule{\barw}{1.5pt} } \\
+	}
+}
+
+\newcommand{\cvsubsection}[1] {
+	\vspace{14pt}
+	\settowidth{\barw}{\textbf{\Large #1}}
+	\cvtext{
+		\textbf{\Large{\textcolor{darkcol}{#1}}}\\[-4pt]
+		\textcolor{accentcol}{ \rule{\barw}{1.5pt} } \\
+	}
+}
+
+\newcommand{\cvheadline}[1] {
+	\vspace{16pt}
+	\cvtext{
+		\textbf{\Huge{\textcolor{accentcol}{#1}}}\\[-4pt]
+		 
+	}
+}
+
+\newcommand{\cvsubheadline}[1] {
+	\vspace{16pt}
+	\cvtext{
+		\textbf{\huge{\textcolor{darkcol}{#1}}}\\[-4pt]
+		 
+	}
+}
+%----------------------------------------------------------------------------------------
+%	META SKILL
+%----------------------------------------------------------------------------------------
+
+% Renders a progress-bar to indicate a certain skill in percent.
+% param 1: name of the skill / tech / etc.
+% param 2: level (for example in years)
+% param 3: percent, values range from 0 to 1
+\newcommand{\cvskill}[3] {
+	\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
+ 		\textcolor{black}{\textbf{#1}} & \textcolor{maincol}{#2}\\
+	\end{tabular*}%
+	
+	\hspace{4pt}
+	\begin{tikzpicture}[scale=1,rounded corners=2pt,very thin]
+		\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.15);
+		\fill [accentcol] (0,0) rectangle (#3\mpwidth, 0.15);
+  	\end{tikzpicture}%
+}
+
+
+%----------------------------------------------------------------------------------------
+%	 CV EVENT
+%----------------------------------------------------------------------------------------
+
+% Renders a table and a paragraph (cvtext) wrapped in a parbox (to ensure minimum content
+% is glued together when a pagebreak appears).
+% Additional Information can be passed in text or list form (or other environments).
+% the work you did
+% param 1: time-frame i.e. Sep 14 - Jan 15 etc.
+% param 2:	 event name (job position etc.)
+% param 3: Customer, Employer, Industry
+% param 4: Short description
+% param 5: work done (optional)
+% param 6: technologies include (optional)
+% param 7: achievements (optional)
+\newcommand{\cvevent}[4] {
+	
+	% we wrap this part in a parbox, so title and description are not separated on a pagebreak
+	% if you need more control on page breaks, remove the parbox
+	\parbox{\mpwidth}{
+		\begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
+	 		\textcolor{black}{\textbf{#2}} & \colorbox{accentcol}{\makebox[0.32\mpwidth]{\textcolor{white}{\textbf{#1}}}} \\
+			\textcolor{maincol}{#3} & \\
+		\end{tabular*}\\[8pt]
+	
+		\ifthenelse{\isempty{#4}}{}{
+			\cvtext{#4}\\
+		}
+	}
+	\vspace{14pt}
+}
+
+\newcommand{\cvproj}[3] {
+	\parbox{\mpwidth}{
+		\begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
+	 		\textcolor{black}{\textbf{#1}} & \\
+			\textcolor{maincol}{#2} & \\
+		\end{tabular*}\\[4pt]
+	
+		\ifthenelse{\isempty{#3}}{}{
+			\cvtext{#3}\\
+		}
+	}
+	\vspace{14pt}
+}
+
+%----------------------------------------------------------------------------------------
+%	 CV META EVENT
+%----------------------------------------------------------------------------------------
+
+% Renders a CV event on the sidebar
+% param 1: title
+% param 2: subtitle (optional)
+% param 3: customer, employer, etc,. (optional)
+% param 4: info text (optional)
+\newcommand{\cvmetaevent}[4] {
+	\textcolor{maincol} { \cvtext{\textbf{\begin{flushleft}#1\end{flushleft}}}}
+
+	\ifthenelse{\isempty{#2}}{}{
+	\textcolor{black} {\cvtext{\textbf{#2}} }
+	}
+
+	\ifthenelse{\isempty{#3}}{}{
+		\cvtext{{ \textcolor{maincol} {#3} }}\\
+	}
+
+	\cvtext{#4}\\[14pt]
+}
+
+%---------------------------------------------------------------------------------------
+%	QR CODE
+%----------------------------------------------------------------------------------------
+
+% Renders a qrcode image (centered, relative to the parentwidth)
+% param 1: percent width, from 0 to 1
+\newcommand{\cvqrcode}[1] {
+	\begin{center}
+		\includegraphics[width={#1}\mpwidth]{qrcode}
+	\end{center}
+}
+
+
+% HEADER AND FOOOTER 
+%====================================
+\newcommand\Header[1]{%
+\begin{tikzpicture}[remember picture,overlay]
+\fill[accentcol]
+  (current page.north west) -- (current page.north east) --
+  ([yshift=50pt]current page.north east|-current page text area.north east) --
+  ([yshift=50pt,xshift=-3cm]current page.north|-current page text area.north) --
+  ([yshift=10pt,xshift=-5cm]current page.north|-current page text area.north) --
+  ([yshift=10pt]current page.north west|-current page text area.north west) -- cycle;
+\node[font=\sffamily\bfseries\color{white},anchor=west,
+  xshift=0.7cm,yshift=-0.32cm] at (current page.north west)
+  {\fontsize{12}{12}\selectfont {#1}};
+\end{tikzpicture}%
+}
+
+\newcommand\Footer[1]{%
+\begin{tikzpicture}[remember picture,overlay]
+\fill[lightcol]
+  (current page.south east) -- (current page.south west) --
+  ([yshift=-80pt]current page.south east|-current page text area.south east) --
+  ([yshift=-80pt,xshift=-6cm]current page.south|-current page text area.south) --
+  ([xshift=-2.5cm,yshift=-10pt]current page.south|-current page text area.south) --	
+  ([yshift=-10pt]current page.south east|-current page text area.south east) -- cycle;
+\node[yshift=0.32cm,xshift=9cm] at (current page.south) {\fontsize{10}{10}\selectfont \textbf{\thepage}};
+\end{tikzpicture}%
+}
+
+
+%=====================================
+%============================================================================%
+%
+%
+%
+%	DOCUMENT CONTENT
+%
+%
+%
+%============================================================================%
+\begin{document}
+
+\columnratio{0.31}
+\setlength{\columnsep}{2.2em}
+\setlength{\columnseprule}{4pt}
+\colseprulecolor{white}
+
+
+% LEBENSLAUF HIERE
+\AtBeginShipoutFirst{\Header{Hugo Roussaffa}\Footer{1}}
+\AtBeginShipout{\AtBeginShipoutAddToBox{\Header{Hugo
+Roussaffa}\Footer{2}}}
+
+\newpage
+
+\colseprulecolor{lightcol}
+\columnratio{0.31}
+\setlength{\columnsep}{2.2em}
+\setlength{\columnseprule}{4pt}
+\begin{paracol}{2}
+	\begin{leftcolumn}
+		%---------------------------------------------------------------------------------------
+		%	META IMAGE
+		%----------------------------------------------------------------------------------------
+                \includegraphics[width=\linewidth]{portrait.jpg}
+        		\fcolorbox{white}{white}{\begin{minipage}[c][1.5cm][c]{1\mpwidth}
+				\normalsize{ \textcolor{maincol} {Data Ingénieur spécialisé en données
+spatiales} }
+			\end{minipage}}
+
+		%---------------------------------------------------------------------------------------
+		%	META SKILLS
+		%----------------------------------------------------------------------------------------
+				\icontext{caret-right}{-5}{Itinérant, Monde}\\[6pt]
+				\icontext{caret-right}{-5}{Français}\\[6pt]
+				\icontext{caret-right}{-5}{Marié, 2 enfants}\\[6pt]
+		
+		
+		\cvsection{Compétences clés}
+
+							
+			\cvskill{Traitement \& automatisation de données}{+10 ans}{1} \\[10pt]
+			
+									
+			\cvskill{Bases de données spatiales}{10 ans}{1} \\[10pt]
+			
+									
+			\cvskill{ETL, ELT, pipeline de données}{6 ans}{0.6} \\[10pt]
+			
+									
+			\cvskill{Analyse spatiale et statistiques}{10 ans}{1} \\[10pt]
+			
+									
+			\cvskill{DevOps \& Infrastructure Cloud}{4 ans}{0.4} \\[10pt]
+			
+									
+			\cvskill{Programmation Python}{8 ans}{0.8} \\[10pt]
+			
+									
+			\cvskill{Docker, Dask, Conda}{4 ans}{0.4} \\[10pt]
+			
+						
+		\cvsection{Technologies}
+
+						\icontext{caret-right}{12}{Python}\\[6pt]
+								\icontext{caret-right}{12}{PostgreSQL/PostGIS}\\[6pt]
+								\icontext{caret-right}{12}{Docker}\\[6pt]
+								\icontext{caret-right}{12}{DBT}\\[6pt]
+								\icontext{caret-right}{12}{Conda, Dask}\\[6pt]
+								\icontext{caret-right}{12}{Git}\\[6pt]
+								\icontext{caret-right}{12}{SSH, RDP, Rsync}\\[6pt]
+								\icontext{caret-right}{12}{Quarto}\\[6pt]
+								\icontext{caret-right}{12}{Elastic Stack}\\[6pt]
+								\icontext{caret-right}{12}{Angular}\\[6pt]
+								\icontext{caret-right}{12}{QGIS}\\[6pt]
+								\icontext{caret-right}{12}{CI/CD Azure DevOps}\\[6pt]
+								\icontext{caret-right}{12}{Linux, M365, Sharepoint}\\[6pt]
+								\icontext{caret-right}{12}{Fortinet, Active Director}\\[6pt]
+						
+		\cvsection{Diplômes}
+
+						\cvmetaevent{2009 - 2011}{Master 2 CARTHAGEO}{Université Paris 7, Paris
+1 Sorbonne \& ENSG}{Mention Bien}
+								\cvmetaevent{2005 - 2008}{Licence Géographie}{Université de Poitiers \&
+Paris 7 Diderot}{Mention Assez Bien}
+						
+		\cvsection{Contact}
+
+						\icontext{map-marker}{-5}{Verdun-en-Lauragais (11 - Aude)}\\[6pt]
+								\icontext{phone}{-5}{+33 767214337}\\[6pt]
+								\icontext{envelope}{-5}{hugoroussaffa@gmail.com}\\[6pt]
+								\iconhref{link}{-5}{Portfolio}{https://yougis.github.io/portfolio-hugo/fr/}\\[6pt]
+								\iconhref{github}{-5}{yougis}{https://github.com/yougis}\\[6pt]
+								\iconhref{linkedin}{-5}{hugo-roussaffa}{https://linkedin.com/in/hugo-roussaffa}\\[6pt]
+						
+	\end{leftcolumn}
+
+	\begin{rightcolumn}
+		\cvtext{%
+Spécialisé dans les données spatiales, expert dans la création et
+l'automatisation de pipelines de données robustes et performantes.
+Expérimenté en bases de données géospatiales, en développement de
+workflows ETL/ELT et en intégration de solutions cloud. Passionné par
+l'optimisation de processus et l'exploitation avancée des données
+géospatiales à grande échelle.}
+
+\cvsection{Expérience} \vspace{4pt}
+
+\cvevent{06/2021 - 08/2024}{Responsable Data \& SI Géospatiaux}{Observatoire de l'environnement (OEIL), Nouméa}{Gestion de pipelines de données spatiales  distribués sur un cluster avec DASK, orchestré avec Prefect, intégration continue avec Azure Devops, ETL/ELT avec DBT, modélisation PostgreSQL/PostGIS, déploiements des environnement avec Docker, Conda.}
+
+\cvevent{05/2011 - 06/2021}{Géomaticien - Data Engineer}{Province Sud, Nouméa (NC)}{Création et automatisation de traitements spatiaux, gestion avancée de bases de données spatiales et développement d'applications web basées sur des pipelines de données robustes.}
+
+\cvevent{04/2016 - 05/2018}{Développeur Data Géospatiales}{Geo-datup, Toulouse (FR)}{Développement Python/QGIS, création de workflows automatisés de traitement et analyse de données photogrammétriques.}
+
+\cvevent{05/2015 - 07/2015}{Consultant Data Management}{ONG Fauna Flora International (Myanmar)}{Mise en place d'une plateforme de partage et automatisation du traitement des données spatiales entre ONG environnementales.}
+
+\cvevent{2009 - 2010}{Analyste de données}{CEDET Université Paris 7 Diderot}{Traitement statistique et analyse de données multivariées.}
+
+\cvsection{Projets pertinents} \vspace{4pt}
+
+\cvproj{Détection et suivi incendies}{Développeur & Data Engineer}{Traitement automatisé flux FIRMS, classification Sentinel-2, Pipelines sur STAC/GEE, Rapports automatisés avec Quarto}
+
+\cvproj{Suivi sécheresse}{Développeur Data Pipeline}{Extraction d'indicateurs satellites via GEE, Déploiement automatisé via CI/CD}
+
+\cvproj{Pollution lumineuse}{Data Engineer}{Pipeline automatisé analyse spatiale images VIIRS, Création tableaux de bord interactifs}
+
+\cvproj{Modélisation et administration BDD spatiale}{Administrateur & Data Engineer}{Modélisation PostgreSQL/PostGIS, Sauvegarde Barman cloud, Gestion droits utilisateurs}
+			\end{rightcolumn}
+\end{paracol}
+
+
+\end{document}

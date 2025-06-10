@@ -1,0 +1,42 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  CONSEIL DEPARTEMENTAL 
+        department: DE LA HAUTE-GARONNE
+        address: 1 boulvard de la marquette 
+        city: Toulouse 
+        country: France
+        postal-code: 31000
+address:
+  - Hugo Roussaffa
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+  - 07.67.21.43.37
+
+subject-title: Référent Système d'Information
+subject-suffix: "&nbsp;:"
+
+opening: "Objet : Candidature au poste de Référent Système d'Information - Offre n° O031250424001280 ou  25-0604"
+closing: "Scincerement,"
+
+
+lang: fr
+
+format: letter-pdf
+---
+
+
+Madame, Monsieur,
+
+Professionnel de la géomatique et des systèmes d'information, j'interviens depuis plus de 14 ans sur des projets techniques complexes mêlant gestion de données, infrastructure SI et accompagnement des métiers. Mon parcours m’a permis de développer une expertise complète en administration de bases (PostgreSQL/PostGIS, SQL Server), automatisation des traitements (Python, SQL) et sécurisation des flux de données, dans des environnements hybrides (local/cloud).
+
+J’ai notamment collaboré avec la Direction de l’Équipement de la Nouvelle-Calédonie sur la mise en place d’un référentiel linéaire routier, structurant les données relatives au réseau pour en améliorer la fiabilité, l’exploitation et la coordination interservices. Ce projet m’a permis de travailler au plus près des enjeux d’aménagement et de gestion des infrastructures dans un contexte territorial.
+
+Par ailleurs, j’ai été en charge de plateformes stratégiques pour la diffusion d’indicateurs territoriaux et l’appui aux politiques publiques, dans des environnements nécessitant rigueur, documentation, et garanties fortes de disponibilité. Ces expériences m’ont sensibilisé aux enjeux de supervision, de robustesse des systèmes et d’assistance aux utilisateurs.
+
+Autonome, rigoureux, et à l’aise dans la coordination interservices, je suis motivé par l’opportunité de contribuer aux missions de la Direction des Routes, en apportant un appui technique direct aux projets d’exploitation, d’entretien et d’investissement sur le réseau départemental.
+
+Je me tiens à votre disposition pour un entretien et suis disponible rapidement.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.

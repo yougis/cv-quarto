@@ -1,0 +1,43 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  CPAM DE L'AUDE
+        department: 
+        address: 2 allée de Bezons
+        city: Carcassonne 
+        country: France
+        postal-code: 11000
+address:
+  - Hugo Roussaffa
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+  - 07.67.21.43.37
+
+subject-title: Agent auxiliaire informatique  - NVHADD109308
+subject-suffix: "&nbsp;:"
+
+opening: "Objet : Agent auxiliaire informatique  - Offre n° NVHADD109308"
+closing: "Scincerement,"
+
+
+lang: fr
+
+format: letter-pdf
+---
+
+
+Madame, Monsieur,
+
+Titulaire d'un Master en géomatique et fort d'une expérience de plus de 14 ans dans le domaine des systèmes d'information géographique, j'ai acquis une expertise technique reconnue, notamment en gestion de données spatiales, développement Python, et administration de systèmes d'information.
+
+
+Bien que mes qualifications en géomatique soient davantage orientées vers des projets stratégiques, je suis pleinement conscient que les compétences requises pour ce poste sont opérationnelles. Je possède une solide maîtrise des procédures techniques, de la préparation de postes de travail, de l'ajout de composants matériels tels que la RAM et les SSD, ainsi que du déploiement de matériel informatique. De plus, mon expérience en gestion de projets m'a permis de développer une grande rigueur, une capacité d'adaptation et un sens aigu du respect des délais et des procédures.
+
+Le poste d'agent auxiliaire informatique au sein de la CPAM de l'Aude, avec sa mission de migration de Windows 10 vers Windows 11, correspond parfaitement à mon projet professionnel actuel. En effet, cette mission opérationnelle de 6 mois me permettra de mettre à profit mes compétences techniques tout en enrichissant mon expérience dans un environnement institutionnel.
+
+Je suis motivé à l'idée d'intégrer une équipe dynamique, de contribuer activement à la maintenance et à l'évolution des infrastructures informatiques, et de participer à la satisfaction des utilisateurs. La proximité de Carcassone est également un atout, facilitant mon intégration et ma disponibilité immédiate au 1er Juillet 2025.
+
+Je me tiens à votre disposition pour un entretien où je pourrai exposer plus en détail mes motivations et l'adéquation de mon profil avec les besoins du poste.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.

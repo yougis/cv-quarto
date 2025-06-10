@@ -1,0 +1,41 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  CA Béziers
+        department: Méditerranée
+        address: 39 Bd de Verdun
+        city: Béziers 
+        country: France
+        postal-code: 34000
+address:
+  - Hugo Roussaffa
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+  - 07.67.21.43.37
+
+subject-title: Chef du service applications et bases de données
+subject-suffix: "&nbsp;:"
+
+opening: "Objet : Candidature au poste chef du service applications et bases de données  - Offre n° EC20112"
+closing: "Scincerement,"
+
+
+lang: fr
+
+format: letter-pdf
+---
+
+Madame, Monsieur,
+
+Titulaire d'une formation supérieure en informatique et fort d'une expérience significative dans l'administration des systèmes d'information, je souhaite mettre mes compétences au service de la Communauté d’Agglomération Béziers Méditerranée en tant que chef du service applications et bases de données.
+
+Au cours de mon parcours professionnel, j'ai acquis une expertise approfondie dans la gestion des bases de données (Oracle, MySQL, PostgreSQL) et l'administration des serveurs sous environnements Linux et Windows. J'ai également mené à bien des projets de dématérialisation et de modernisation des processus métiers, en assurant la disponibilité et la sécurité des systèmes d'information.
+
+Doté d'un esprit d'analyse et d'une grande rigueur, je suis reconnu pour mes qualités managériales et ma capacité à encadrer des équipes techniques. Mon engagement pour l'innovation et ma veille constante sur les évolutions technologiques me permettent de proposer des solutions adaptées aux besoins des utilisateurs et des collectivités.
+
+Intégrer votre collectivité représente pour moi l'opportunité de contribuer activement à la mutualisation informatique et à la transformation numérique du territoire, dans un environnement dynamique et en constante évolution.
+
+Je me tiens à votre disposition pour un entretien au cours duquel je pourrais vous exposer plus en détail mes motivations et l'adéquation de mon profil avec les exigences du poste.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.

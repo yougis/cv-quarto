@@ -7,7 +7,7 @@ cvfont: raleway
 cvcolor:
   main: "B83B5E"
   accent: "6A2C70"
-jobtitle: Data Engineer spécialisé en données spatiales
+jobtitle: Data Ingénieur spécialisé en données spatiales
 sidebar:
   image: portrait.jpg
   bullets:
@@ -71,14 +71,18 @@ sidebar:
           inst: "Université de Poitiers & Paris 7 Diderot"
           time: "2005 - 2008"
           details: "Mention Assez Bien"
+    
     - name: Contact
       items:
         - icon: map-marker
-          text: Itinérant, Monde
+          text: Verdun-en-Lauragais (11 - Aude)
         - icon: phone
-          text: "+33 659865534"
+          text: "+33 767214337"
         - icon: envelope
           text: "hugoroussaffa@gmail.com"
+        - icon: link
+          text: "Portfolio"
+          href: "https://yougis.github.io/portfolio-hugo/fr/"
         - icon: github
           text: "yougis"
           href: "https://github.com/yougis"
@@ -89,9 +93,40 @@ execute:
   echo: false
 ---
 
-# Résumé
 
-Data Engineer spécialisé dans les données spatiales, expert dans la création et l'automatisation de pipelines de données robustes et performants. Expérimenté en bases de données géospatiales, en développement de workflows ETL/ELT et en intégration de solutions cloud. Passionné par l'optimisation de processus et l'exploitation avancée des données géospatiales à grande échelle.
+
+```{r}
+
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+cvproj <- function(tbl, what, role, items) {
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x) paste0(x, collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+
+
+```
+
+
+Spécialisé dans les données spatiales, expert dans la création et l'automatisation de pipelines de données robustes et performantes. Expérimenté en bases de données géospatiales, en développement de workflows ETL/ELT et en intégration de solutions cloud. Passionné par l'optimisation de processus et l'exploitation avancée des données géospatiales à grande échelle.
 
 # Expérience
 
@@ -103,8 +138,8 @@ library(tibble)
 
 tibble::tribble(
   ~role, ~institution, ~dates, ~details,
-  "Responsable Data & SI Géospatiaux", "Observatoire de l'environnement (OEIL), Nouméa", "06/2021 - 08/2024",
-  "Gestion de pipelines de données spatiales automatisés, intégration continue, ETL/ELT, modélisation PostgreSQL/PostGIS, déploiements Docker, Conda et Dask.",
+  "Responsable Data \\& SI Géospatiaux", "Observatoire de l'environnement (OEIL), Nouméa", "06/2021 - 08/2024",
+  "Gestion de pipelines de données spatiales  distribués sur un cluster avec DASK, orchestré avec Prefect, intégration continue avec Azure Devops, ETL\\/ELT avec DBT, modélisation PostgreSQL/PostGIS, déploiements des environnement avec Docker, Conda.",
 
   "Géomaticien - Data Engineer", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
   "Création et automatisation de traitements spatiaux, gestion avancée de bases de données spatiales et développement d'applications web basées sur des pipelines de données robustes.",
@@ -137,5 +172,19 @@ tibble::tribble(
   "Pollution lumineuse", "Data Engineer", c("Pipeline automatisé analyse spatiale images VIIRS", "Création tableaux de bord interactifs"),
 
   "Modélisation et administration BDD spatiale", "Administrateur & Data Engineer", c("Modélisation PostgreSQL/PostGIS", "Sauvegarde Barman cloud", "Gestion droits utilisateurs")
+) |> cvproj("what", "role", "items")
+```
+
+```{r}
+#| label: projects
+#| output: asis
+
+tibble::tribble(
+  ~what, ~role, ~items,
+  "Détection et suivi d'incendies", "Responsable technique", c("Traitement données FIRMS", "classification de données Sentinel-2","photointerpretation collaborative avec Collect Earth Online", "exploitation catalogue STAC et GEE", "création de tableau de bord ESRI, rapports et atlas automatisés Quarto/QGIS \\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/atlas-qgis/}{Atlas en détail} \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/dashboards/vulcain/}{Dashboard en détail}"),
+
+  "Suivi sécheresse végétale", "Responsable technique", c("Indicateurs satellites (VAI et VHI) résolution spatiale de 10m-250m et temporelle de 10 jours (L8, L9, S2, MODIS, ASCAT)", "Développement python, déploiement et intégration continue avec Azure Devops. \\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/secheresse-vegetale/}{Projet en détail}"),
+
+  "Pollution lumineuse", "Responsable technique", c("Cartographie VIIRS, analyse spatiale", "Atlas cartographique, tableau de bord\\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/dashboards/pollux/}{Dashboard en détail}"),
 ) |> cvproj("what", "role", "items")
 ```

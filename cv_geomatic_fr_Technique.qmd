@@ -55,66 +55,68 @@ sidebar:
           exp:
             text: "+14 ans"
             num: 1
-        - text: Analyse spatiale & statistiques
+          icon : layer-group
+        - text: Data, analyse spatiale & statistiques
           exp:
-            text: "10 ans"
+            text: "+14 ans"
             num: 1
-        - text: Géo-traitement & développement Python
+          icon: rocket
+        - text: Gestion de projet
           exp:
             text: "8 ans"
             num: 0.8
-        - text: Gestion de projet SCRUM
+          icon : people-carry
+        - text: Géo-traitement & développement
           exp:
             text: "8 ans"
             num: 0.8
-        - text: Automatisation & Rapportage 
-          exp:
-            text: "5 ans"
-            num: 0.5
-        - text:  Management d'équipe
+          icon: whmcs
+        - text:  Management
           exp:
             text: "3 ans"
             num: 0.3
-    - name: Techno
+          icon: users
+    - name: Technologies
       items:
-        - QGIS, ArcGIS, GEE, QField, ODK
-        - ArcGIS Online, Geoserveur, Mapserver
-        - Python, GeoPandas, Dask, GeoDjango
-        - GDAL, FME
-        - SQL, DBT, H3
-        - PostGIS, Mysql, Sqlite
-        - Lizmap, OpenLayers
-        - Docker, Conda
-        - Power BI, Plotly, Quarto
-        - Git, CI/CD Azure DevOps
-        - Linux, M365, Sharepoint
-        - Fortinet, Active Directory
-        - SSH, RDP, Rsync
+        - text : QGIS, ArcGIS, GEE, QField, ODK, Lizmap, OpenLayers
+          icon : layer-group
+        - text : Python, GeoPandas, Dask, GeoDjango
+          icon : python
+        - text : GDAL, FME, SQL, PostGIS, DBT
+          icon : database
+        - text : Power BI, Plotly, Quarto
+          icon : chart-bar
+        - text : Copernicus, IGN, NASA, OSM
+          icon : globe
+        - text : REST API, STAC, INSPIRE
+          icon : upload
+
     - name: Diplômes
       items:
         - text: "Master 2 CARTHAGEO"
           inst: "Université Paris 7, Paris 1 Sorbonne \\& ENSG"
           time: "2009 - 2011"
           details: "Mention Bien"
-    - name: Formation
+    - name: Formations
       items:
 
         - time: "2012 - 2023"
           inst: Institut Formation Publique
           details: |2-
-            **SIG:**
+            **DATA & SIG:**
             FME, ArcGIS, Télédétection, MicMac, PowerBI, ARSET-NASA
             
-            **Développement:**
+            **Dév :**
             HTML5, CSS3, Python Django et Flask, Docker, Angular, Elastic Stack, Tomcat, Java Grails/Gorm
 
             [{{< fa link >}} Consulter les certificats](https://yougis.github.io/portfolio-hugo/fr/about/)
     
-    - name: Passions
+    - name: Intérêts
       items:
+        - Ecologie
         - Batterie et guitare
         - Voyage hauturier en voilier
-        - Jeux de plateau / Escape game
+        - Jeux de stratégie / Escape game
 execute:
   echo: false
 
@@ -153,20 +155,9 @@ cvproj <- function(tbl, what, role, items) {
 
 --- 
 
- Compétences approfondies en SIG, cartographie, analyse spatiale, télédétection, traitement de données, développement, programmation et gestion de projet géomatique. Passionné par les solutions open source, l'environnement et la collaboration internationale. Grâce à mes multiples compétences SIG et informatique, je conçois des solutions complètes sur mesure, alliant coopération, rigueur technique et innovation.
+Chef de projet spécialisé en géomatique, j’allie expertise en SIG, analyse spatiale, télédétection et développement informatique pour concevoir et piloter des projets autour de la donnée spatiale. Sensible aux enjeux environnementaux, je m’engage dans des démarches collaboratives où l’innovation technique, la clarté des résultats et la cohérence des méthodes sont au coeur de ma pratique.
 
 ---
-
-
-{{< fa map >}} **SIG desktop, web et serveur** : maîtrise avancée de QGIS, ArcGIS, GEE, Lizmap, OpenLayer, GeoNode, Geoserver, Mapserver etc.  
-
-{{< fa brands python >}} **Data science avec Python** : traitement, stockage, analyse spatiales et data visualisation.  
-
-{{< fa database >}} **Gestion de données spatiales** : spécialiste des bases PostGIS, SQL, framework DBT et des systèmes d’indexation spatiale comme H3.
-
-{{< fa globe >}} **Données ouvertes** : expertise sur OpenStreetMap, programmes satellite Copernicus et NASA, et bien d'autres sources open data Françaises.  
-
-{{< fa download >}} **Échange et accès des données collaboratives via API et catalogue** : API REST, Spatio Temporel Asset Catalog (STAC), INSPIRE.  
 
 
 # Expériences
@@ -179,34 +170,35 @@ library(tibble)
 
 tibble::tribble(
   ~role, ~institution, ~dates, ~details,
-  "Responsable SI \\& Géomatique", "Observatoire de l'environnement en Nouvelle-Calédonie (OEIL), Nouméa", "06/2021 - 08/2024",
-  "Gestion d'équipe (\\faUser \\faUser \\faUser) et encadrement de stages (\\faUsers x 10) , Nombreuses thématiques environnementales abordées (Erosion, incendies, sécheresse végétale, gestion de l'eau, pollution lumineuse, dégradation forestière).\\newline  Administration du SI de l'observatoire, coordination des services numériques avec les partenaires, intégrité et sécurité des données.
-  Maintien et évolution des services numériques, gestion des données, des tableaux de bord et des rapports. Développement et automatisation de chaine de traitement complexe en Python. \\newline 
-  Analyse des besoins, estimation des charges, rédaction des cahiers des charges et des spécifications techniques pour les nouveaux projets.
-  Promotion et communication sur les activités de l'observatoire en réunion et en public.",
+  
+  "Responsable SI \\& Géomatique", "Observatoire de l'environnement (OEIL), Nouméa (NC)" , "06/2021 - 08/2024",
+  "Manageur  (\\faUser \\faUser \\faUser)  et encadrant de stages  (\\faUsers x 10) sur des projets en data environnementale : érosion, incendies, sécheresse végétale, qualité de l’eau, pollution lumineuse, fragmentation des milieux.
+  \\newline Administration du système d'information, intégrité des données et sécurité numérique.
+  \\newline Coordination de projets pluri-acteurs : définition des objectifs, rédaction de cahiers des charges, gestion des ressources, des taches et animation des comités de pilotage.
+  \\newline Développement de chaînes de traitement automatisées distribués et parallélisé (DASK) pour la production d'indicateurs environnementaux dans un modèle de donnée decisionnel standardisé.
+  \\newline Réalisation de dashboards interactifs, cartographies d'analyse, rapports d’aide à la décision à destination du grand public et des institutions.
+  \\newline Suivi budgétaire, gestion des livrables, diffusion des données sur plateformes ouvertes.
+  \\newline Communication grand public et institutionnelle : présentation des projets en réunion, séminaires et événements.",
 
- "Enseignant vacataire", "Université Nouméa (NC)", "2024",
-  "Enseignement pour étudiant de Licence Géosciences appliquées, mines, eau et environnement.   \\newline 
-  Cours TD/TP de cartographie et SIG avancé avec QGIS.   \\newline 
-  Cours TD/TP de photogramterie rapprochée avec Micmac.",
+  "Chef de projet SIG - Fonctionnaire CAT A", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
+  "Cartographie web, gestion de métadonnées, gestion de services cartographiques, développement d'interfaces et maintenance des applications SIG de la collectivité.
+  \\newline Accompagnement des utilisateurs : analyse des besoins, cadrage, rédaction des spécifications techniques détaillées, estimation des charges, gestion des ressources et reporting.
+  \\newline Suivi de projets transversaux dans des domaines variés : développement rural, environnement, archéologie, infrastructures routières, logement social, éducation.
+  \\newline Coordination de projet de bout en bout : planification, choix des outils, administration de bases de données spatiales, maintenance applicative, et intégration web.
+  \\newline Pilotage de solutions data spatialisées au service de l’action publique, avec livrables annuels, tableaux de bord décisionnels et cartographies à forte valeur ajoutée.",
 
-
- "Enseignant vacataire", "Université Nouméa (NC)", "2020",
-  "Enseignement pour étudiant de Master Gestion de l'environnement. \\newline 
-  Cours TD/TP de télédétection, exploration multispectrale des images Sentinel 2 et pratique avec le logiciel Orfeo ToolBox",
-
-  "Géomaticien, Ingénieur SIG", "Province Sud, Nouméa (NC)", "05/2011 - 06/2021",
-  "Cartographie web, gestion de métadonnées, gestion de services cartographiques, gestion de flux de données, développement web et plugin desktop QGIS, création d'interface UX, administration de bases de données et maintenance des applications SIG de la collectivité. Accompagnement des utilisateurs dans l'analyse des besoins, estimation des charges, définition des specifications techniques détaillées, suivi des tâches des projets et reporting. Multitude de thématiques abordées : développement rural, environnement, archéologie, gestion des infrastructure routières, logement social et éducation.",
+ "Enseignant vacataire", "Université Nouméa (NC)", "2020 et 2024",
+  "Enseignement pour étudiant de Licence Géosciences appliquées, mines, eau et environnement et de Master.   \\newline 
+  Cours TD/TP de cartographie et SIG avancé avec QGIS, de photogramterie rapprochée avec Micmac et de télédétection avec exploration multispectrale d´images satelittes avec Orfeo ToolBox et Monteverdi",
 
   "Entrepreneur - GeoDatup", "Maison de l'initiative, Toulouse (FR)", "04/2016 - 05/2018",
-  "Développement de plugins, formation QGIS, réalisation orthophotographie par drone.",
+  "Développement de plugins, formation QGIS, réalisation d'orthophotographies par drone.",
 
   "Consultant plateforme de données", "ONG Fauna Flora International (Myanmar)", "05/2015 - 07/2015",
-  "Mise en place d'une plateforme collaborative de partage données (CKAN). Automatisation et traitement données spatiales. Capacité d'adaptation rapide dans ce contexte multiculturel.",
+  "Etude et mise en place d'une plateforme collaborative de partage données (CKAN). Automatisation et traitement de données spatiales. Capacité d'adaptation rapide dans ce contexte multiculturel.",
 
   "Chef de projet statistiques", "CEDET Université Paris 7 Diderot", "2009 - 2010",
   "GéoStatistique, analyses multivariées ACP/AFC/CAH, data visualisation.",
-
 
   "Publications", "25th International Cartographic Conference (ICC11)", "2011",
   "- Christophe S., Zanin C., Roussaffa H. (2011), Colours Harmony in Cartography. 
@@ -216,7 +208,8 @@ tibble::tribble(
   ",
 
   "Mémoires Master", "Université Paris Diderot Paris 7", "2009 - 2011",
-  "- Roussaffa H., Mathian H., Rinck N. (2011), Gestion du cycle de vie des données environnementales.\\newline 
+  "- Roussaffa H., Mathian H., Rinck N. (2011), Gestion du cycle de vie des données environnementales.
+  \\newline 
   - Roussaffa H., Zanin C., Christophe S. (2009), Caractérisation de l´harmonie des couleurs dans une carte."
 
 
@@ -226,11 +219,12 @@ tibble::tribble(
 
 # Réferences
 
-{{< fa envelope >}} Fabien Albouy - fabien.albouy@oeil.nc : Directeur de l'Observatoire de l'environnement en Nouvelle-Calédonie.
+- Fabien Albouy - fabien.albouy@oeil.nc : Directeur de l'Observatoire de l'environnement en Nouvelle-Calédonie.
 
-{{< fa envelope >}} Sebastien Guenier  - sebastien.guenier@province-sud.nc : Directeur du Système d'information de la Province Sud Nouvelle_Calédonie.
 
-# Projets
+- Sebastien Guenier  - sebastien.guenier@province-sud.nc : Directeur du Système d'information de la Province Sud de Nouvelle-Calédonie.
+
+# Exemple de projets récents
 
 ```{r}
 #| label: projects
@@ -243,14 +237,5 @@ tibble::tribble(
   "Suivi sécheresse végétale", "Responsable technique", c("Indicateurs satellites (VAI et VHI) résolution spatiale de 10m-250m et temporelle de 10 jours (L8, L9, S2, MODIS, ASCAT)", "Développement python, déploiement et intégration continue avec Azure Devops. \\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/secheresse-vegetale/}{Projet en détail}"),
 
   "Pollution lumineuse", "Responsable technique", c("Cartographie VIIRS, analyse spatiale", "Atlas cartographique, tableau de bord\\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/dashboards/pollux/}{Dashboard en détail}"),
-
-  "Couverture forestière", "Responsable technique", c("Exploitation des données Tropical Moist Forest et Global Forest Change, réalisation d'analyses spatiales et géotraitements."),
-
-  "Protection eau potable", "Responsable technique", c("Suivi pressions environnementales sur la ressource en eau", "Tableaux de bord décisionnels\\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/dashboards/ppe/}{Dashboard en détail}"),
-
-  "SI Décisionnel", "Architecte et Ingenieur des données", c( "Traitement géospatial Python et distribution des traitements parallelisés avec Dask sur un cluster de machine",
-"Mise en oeuvre ELT avec DBT, indexation des données sur grille H3",  
-"Mise en place des Dataviz et automatisation des rapports",
-"Postgres, gestion des droits, backup décentralisé avec Barman",
-"Déploiement de serveurs Docker et orchestration avec Portainer. Utilisation d’environnements Conda, Linux, SSH, Git, CI Azure DevOps" ,"\\newline \\faLink~\\href{https://yougis.github.io/portfolio-hugo/fr/project/bilbo/}{Article en détail}")) |> cvproj("what", "role", "items")
+) |> cvproj("what", "role", "items")
 ```

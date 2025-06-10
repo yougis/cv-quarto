@@ -1,0 +1,166 @@
+---
+title: Hugo ROUSSAFFA
+format:
+  modern2-cv-pdf: default
+  pdf:
+    colorlinks: true
+    documentclass: scrreprt
+    pdf-engine: lualatex
+    include-in-header:
+    - text: |
+       \usepackage{emoji}
+    #pdf-engine: xelatex
+    mainfont: "Noto Sans"
+    fontsize: 11pt
+    
+  html:
+    from: markdown+emoji
+author: Hugo Roussaffa
+cvfont: raleway
+cvcolor:
+  main: "B83B5E"
+  accent: "6A2C70"
+jobtitle: Technicien supérieur en systèmes d'information & support informatique
+
+sidebar:
+  image: portrait.jpg
+
+  bullets:
+    - Français
+    - Marié, 2 enfants
+    - Permis voiture / Drone / Bâteau côtier & hauturier
+
+  sections:
+      
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Verdun-en-Lauragais (11 - Aude)
+        - icon: phone
+          text: "+33 767214337"
+        - icon: envelope
+          text: "hugoroussaffa@gmail.com"
+        - icon: link
+          text: "Portfolio"
+          href: "https://yougis.github.io/portfolio-hugo/fr/"
+        - icon: github
+          text: "yougis"
+          href: "https://github.com/yougis"
+        - icon: linkedin
+          text: "hugo-roussaffa"
+          href: "https://linkedin.com/in/hugo-roussaffa"
+
+    - name: Compétences
+      items:
+        - text: Maintenance IT
+          icon: tools
+        - text: Assistance utilisateurs
+          icon: chalkboard-teacher
+
+    - name: Technologies
+      items:
+        - text : Windows 10 & 11 
+          icon : windows
+        - text : Linux Debian & Fedora
+          icon : linux 
+        - text : Windows Server,  M365,  Virtualisation VirtualBox, VMware
+          icon : server
+        - text : Sauvegarde, NAS, synchronisation
+          icon : save
+        - text : Code Python, Bash, Powershell
+          icon : code
+        - text : SQL, Postgres, DBT
+          icon : database
+        - text : Power BI, Plotly, Quarto
+          icon : chart-bar
+        - text : cybersecurité, Forti, Eset
+          icon : lock
+
+execute:
+  echo: false
+
+---
+
+
+```{r}
+
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+cvproj <- function(tbl, what, role, items) {
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x) paste0(x, collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+
+
+```
+
+--- 
+
+Professionnel polyvalent des systèmes d'information, je combine plus de 10 ans d'expérience en gestion de parc, support utilisateurs, administration de données et coordination de projets informatiques. J’assure la continuité opérationnelle d’environnements critiques, le support technique quotidien des utilisateurs et la maintenance d’infrastructures IT hybrides.
+
+---
+
+
+# Expériences
+
+```{r}
+#| label: experience
+#| output: asis
+
+library(tibble)
+tibble::tribble(
+  ~role, ~institution, ~dates, ~details,
+
+  "Support, administration et maintenance SI", "Observatoire de l'environnement (OEIL), Nouvelle-Calédonie", "2021 - 2024",
+  "Assistance quotidienne aux utilisateurs : diagnostic, dépannage matériel/logiciel, gestion des accès au NAS, documentation et sensibilisation à la cybersécurité.
+  \\newline Update de windows 10 vers windows 11,
+  \\newline Administration du système d'information interne : supervision du parc informatique (30+ postes), suivi du matériel, gestion de tickets GLPI, mises à jour logicielles et OS, procédures de sauvegarde, gestion des antivirus et du firewall.
+  \\newline Augmentation de la mémoire vive (RAM et SDRAM) pour améliorer les performances système des machines des collaborateurs.
+  \\newline Remplacement de disques durs par des SSD NVMe pour accélérer les temps de chargement.
+  \\newline Installation et configuration de périphériques externes tels que double moniteurs, claviers, souris et configuration imprimantes.
+  \\newline Maintenance du réseau local et des services (WiFi, imprimantes, NAS, serveurs Linux/Windows), configuration de postes et scripts d’automatisation.
+  \\newline Administration des droits dans l'Active Directory.
+  \\newline Gestion du stock des unités centrales et peripheriques.
+  \\newline Suivi des dates de fin de support des logiciels critiques.
+  ",
+  "Technicien IT", "Province Sud, Nouvelle-Calédonie", "2011 - 2021",
+  "Maintenance et développement d'applications métier et de bases de données géographiques.
+  \\newline Support utilisateur dans l'usage des outils cartographiques internes, formation aux outils bureautiques et géomatiques.",
+
+
+  "Formateur vacataire", "Université de Nouméa", "2020 et 2024",
+  "Cours en salle informatique sur QGIS, télédétection et photogrammétrie. Formation à des outils spécialisés, gestion de salles et configuration logicielle."
+) |> cvevents("dates", "role", "institution", "details")
+
+
+```
+
+#  Formation
+
+**Master 2 CARTHAGEO** Géo & Informatique 
+Université Paris 7, Paris 1 Sorbonne & ENSG (2009 - 2011)- Mention Bien
+
+**Formations continues** (2012 - 2023) – Institut Formation Publique
+- DATA & SIG : FME, ArcGIS, Télédétection, MicMac, PowerBI, ARSET-NASA
+- Développement : HTML5, CSS3, Python (Django, Flask), Docker, Angular, Elastic Stack, Tomcat, Java (Grails/Gorm)
+
+  [{{< fa link >}} Consulter les certificats](https://yougis.github.io/portfolio-hugo/fr/about/)
+    

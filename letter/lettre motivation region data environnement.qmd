@@ -1,0 +1,41 @@
+---
+author:
+  - name: Roussaffa Hugo
+    affiliation:
+      - name:  CONSEIL REGIONAL 
+        department: D'OCCITANIE
+        address:  22 boulvard du Marechal Juin
+        city: Toulouse 
+        country: France
+        postal-code: 31000
+address:
+  - Hugo Roussaffa
+  - 3 chemin de Rouyre Haut
+  - Verdun-en-Lauragais 11400
+  - 07.67.21.43.37
+
+subject-title: Chef de projet data analyste spécialité environnement
+subject-suffix: "&nbsp;:"
+
+opening: "Objet : Candidature au poste de Chef de projet data analyste spécialité environnement - Offre n° O031250505000845 ou 25-04-52 DIN"
+closing: "Scincerement,"
+
+
+lang: fr
+
+format: letter-pdf
+---
+
+Madame, Monsieur,
+
+Professionnel de la géomatique et des systèmes d’information depuis plus de 14 ans, j’ai développé une expertise transversale en gestion de données environnementales, analyse spatiale, coordination de projets numériques et valorisation de l’information territoriale. Maîtrisant l’ensemble de la chaîne de la donnée – de la structuration à la diffusion – je suis particulièrement motivé par l’ambition de la Région Occitanie de faire de la donnée un levier stratégique au service de la transition écologique.
+
+En Nouvelle-Calédonie, j’ai conduit plusieurs projets à forts enjeux interinstitutionnels, en animant des groupes de travail rassemblant des intérêts parfois divergents (urbanisme, agriculture, biodiversité). Ce type d'expérience m’a permis de développer un savoir-faire spécifique dans la médiation autour de référentiels communs, garantissant cohérence, transparence et adoption collective.
+
+Dans le cadre du projet PEP-BioCCIA, je suis en mesure de piloter des projets complexes mobilisant des profils très diversifiés : chercheurs, ingénieurs, développeurs, décideurs institutionnels, ayant des temporalités, des logiques et des attentes souvent hétérogènes. Mon rôle consiste à harmoniser ces objectifs, à fluidifier les échanges inter-niveaux et à garantir la production de livrables lisibles, utiles et techniquement robustes (modèles de données, API, tableaux de bord). Pour ce faire, je structure les projets autour d’une gouvernance partagée, de jalons clairs et d’un système de suivi par lot. Je suis particulièrement attentif à l’identification des points de blocage en amont s'il y en a, qu’ils soient techniques (interopérabilité, volumétrie, limites des modèles) ou fonctionnels (défauts d’appropriation, divergences d’usage), et je cherche des solutions réalistes et adaptées. La traçabilité des arbitrages, la reproductibilité des traitements et une documentation rigoureuse sont pour moi fondamentaux pour garantir la pérennité et l’impact concret du projet.
+
+Curieux, rigoureux, autonome et soucieux d'être utile, je suis prêt à m’impliquer pleinement dans les projets menés par la Direction de l’Information et du Numérique, avec un souci constant du service public et des differents utilisateurs.
+
+Disponible rapidement, je reste à votre disposition pour un échange.
+
+Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.
